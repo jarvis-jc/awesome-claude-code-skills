@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Integration Skills for Claude Code | APIs, Cloud & Platform Skills</title>
+    <meta name="description" content="20+ integration skills for Claude Code: Cloudflare Workers, Stripe payments, Vercel deployment, Expo mobile, Hugging Face ML, Supabase database, and more platform integrations.">
+    <meta name="keywords" content="Claude Code integration skills, Cloudflare, Stripe, Vercel, Expo, Hugging Face, Supabase, API integration">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://awesome-claude-code-skills.com/integration.html">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://awesome-claude-code-skills.com/integration.html">
+    <meta property="og:title" content="Integration Skills for Claude Code | APIs & Platform Skills">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Integration Skills for Claude Code",
+        "description": "Curated collection of integration skills for connecting Claude Code with cloud platforms, APIs, and services.",
+        "url": "https://awesome-claude-code-skills.com/integration.html",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://awesome-claude-code-skills.com/"},
+                {"@type": "ListItem", "position": 2, "name": "Integration Skills", "item": "https://awesome-claude-code-skills.com/integration.html"}
+            ]
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What are Claude Code integration skills?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Integration skills connect Claude Code with external platforms and services like Cloudflare, Stripe, Vercel, Expo, Hugging Face, and Supabase. They teach Claude platform-specific best practices and enable direct deployments."
+                }
+            }
+        ]
+    }
+    </script>
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔗</text></svg>">
+    
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f6f8fa;
+            --bg-card: #ffffff;
+            --text-primary: #1f2328;
+            --text-secondary: #656d76;
+            --text-muted: #8b949e;
+            --border-color: #d0d7de;
+            --accent-color: #ec4899;
+            --link-color: #0969da;
+        }
+        [data-theme="dark"] {
+            --bg-primary: #0d1117;
+            --bg-secondary: #161b22;
+            --bg-card: #21262d;
+            --text-primary: #f0f6fc;
+            --text-secondary: #8b949e;
+            --text-muted: #6e7681;
+            --border-color: #30363d;
+            --accent-color: #f472b6;
+            --link-color: #58a6ff;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg-primary); color: var(--text-primary); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header { background: var(--bg-secondary); border-bottom: 1px solid var(--border-color); padding: 16px 0; position: sticky; top: 0; z-index: 100; }
+        .header-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--text-primary); }
+        .logo-icon { font-size: 28px; }
+        .logo-text { font-size: 20px; font-weight: 600; }
+        nav { display: flex; gap: 24px; }
+        nav a { color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 8px 12px; border-radius: 6px; }
+        nav a:hover, nav a.active { background: var(--accent-color); color: white; }
+        .hero { padding: 60px 0 40px; background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%); }
+        .hero h1 { font-size: 42px; font-weight: 700; margin-bottom: 16px; }
+        .hero h1 .accent { color: var(--accent-color); }
+        .hero-description { font-size: 18px; color: var(--text-secondary); max-width: 700px; margin-bottom: 24px; }
+        .breadcrumb { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; }
+        .breadcrumb a { color: var(--link-color); text-decoration: none; }
+        .definition-section { padding: 40px 0; border-bottom: 1px solid var(--border-color); }
+        .definition-box { background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 12px; padding: 24px; }
+        .definition-box h2 { font-size: 20px; margin-bottom: 12px; color: var(--accent-color); }
+        .definition-box p { color: var(--text-secondary); line-height: 1.7; }
+        .comparison-section { padding: 40px 0; }
+        .comparison-section h2 { font-size: 24px; margin-bottom: 20px; }
+        .comparison-table { width: 100%; border-collapse: collapse; margin-bottom: 24px; }
+        .comparison-table th, .comparison-table td { padding: 12px 16px; text-align: left; border: 1px solid var(--border-color); }
+        .comparison-table th { background: var(--bg-secondary); font-weight: 600; }
+        .comparison-table a { color: var(--link-color); text-decoration: none; }
+        .skills-section { padding: 40px 0; }
+        .section-title { font-size: 24px; font-weight: 600; margin-bottom: 24px; }
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 20px; }
+        .skill-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 20px; transition: all 0.2s; }
+        .skill-card:hover { border-color: var(--accent-color); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); }
+        .skill-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
+        .skill-name { font-size: 18px; font-weight: 600; color: var(--link-color); text-decoration: none; }
+        .skill-name:hover { text-decoration: underline; }
+        .skill-badge { font-size: 11px; padding: 4px 8px; border-radius: 12px; background: var(--accent-color); color: white; font-weight: 500; }
+        .skill-badge.official { background: #8b5cf6; }
+        .skill-description { color: var(--text-secondary); font-size: 14px; margin-bottom: 16px; line-height: 1.5; }
+        .skill-meta { font-size: 13px; color: var(--text-muted); }
+        .install-cmd { background: var(--bg-secondary); padding: 8px 12px; border-radius: 6px; font-family: monospace; font-size: 12px; margin-top: 12px; }
+        .faq-section { padding: 40px 0; background: var(--bg-secondary); }
+        .faq-section h2 { font-size: 24px; margin-bottom: 24px; }
+        .faq-item { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; margin-bottom: 12px; }
+        .faq-question { padding: 16px 20px; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; }
+        .faq-question:hover { background: var(--bg-secondary); }
+        .faq-answer { padding: 0 20px 16px; color: var(--text-secondary); display: none; }
+        .faq-item.open .faq-answer { display: block; }
+        footer { background: var(--bg-secondary); border-top: 1px solid var(--border-color); padding: 40px 0; text-align: center; }
+        .footer-links { display: flex; justify-content: center; gap: 32px; margin-bottom: 24px; }
+        .footer-links a { color: var(--text-secondary); text-decoration: none; font-size: 14px; }
+        .footer-text { color: var(--text-muted); font-size: 13px; }
+        @media (max-width: 768px) { .hero h1 { font-size: 28px; } .skills-grid { grid-template-columns: 1fr; } nav { display: none; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="/" class="logo"><span class="logo-icon">⚡</span><span class="logo-text">Awesome Claude Code Skills</span></a>
+            <nav>
+                <a href="/">All Skills</a>
+                <a href="/productivity.html">Productivity</a>
+                <a href="/coding.html">Coding</a>
+                <a href="/research.html">Research</a>
+                <a href="/automation.html">Automation</a>
+                <a href="/integration.html" class="active">Integration</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <nav class="breadcrumb"><a href="/">Home</a> / <span>Integration Skills</span></nav>
+                <h1><span class="accent">Integration</span> Skills</h1>
+                <p class="hero-description">Connect Claude Code with cloud platforms, APIs, and services. Deploy to Cloudflare, integrate Stripe payments, publish to Vercel, and more.</p>
+            </div>
+        </section>
+
+        <section class="definition-section">
+            <div class="container">
+                <div class="definition-box">
+                    <h2>What are Integration Skills?</h2>
+                    <p><strong>Integration skills</strong> connect Claude Code with external platforms and services. They teach Claude platform-specific best practices, APIs, and workflows for services like Cloudflare, Stripe, Vercel, Expo, Hugging Face, Supabase, Sentry, and more. Many are created by the platform teams themselves.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="comparison-section">
+            <div class="container">
+                <h2>Platform Integration Comparison</h2>
+                <table class="comparison-table">
+                    <thead>
+                        <tr><th>Platform</th><th>Skills Available</th><th>Features</th><th>Author</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><a href="https://github.com/cloudflare/skills">Cloudflare</a></td><td>7 skills</td><td>Workers, KV, R2, D1, Durable Objects</td><td>Cloudflare Team</td></tr>
+                        <tr><td><a href="https://github.com/huggingface/skills">Hugging Face</a></td><td>8 skills</td><td>Models, datasets, training, evaluation</td><td>HF Team</td></tr>
+                        <tr><td><a href="https://github.com/stripe/ai/tree/main/skills">Stripe</a></td><td>2 skills</td><td>Payments, SDK upgrades</td><td>Stripe Team</td></tr>
+                        <tr><td><a href="https://github.com/expo/skills">Expo</a></td><td>3 skills</td><td>Build, deploy, upgrade</td><td>Expo Team</td></tr>
+                        <tr><td><a href="https://github.com/getsentry/skills">Sentry</a></td><td>5+ skills</td><td>Code review, debugging</td><td>Sentry Team</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <div class="container">
+                <h2 class="section-title">All Integration Skills</h2>
+                <div class="skills-grid">
+                    <!-- Cloudflare Skills -->
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/cloudflare/skills" class="skill-name" target="_blank">Cloudflare Skills</a>
+                            <span class="skill-badge official">Official</span>
+                        </div>
+                        <p class="skill-description">Deploy and manage Workers, KV, R2, D1, Vectorize, Queues, and Workflows on Cloudflare's global edge network.</p>
+                        <div class="skill-meta">By Cloudflare Team</div>
+                        <div class="install-cmd">/plugin marketplace add cloudflare/skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/cloudflare/skills/tree/main/durable-objects" class="skill-name" target="_blank">Durable Objects</a>
+                            <span class="skill-badge official">Official</span>
+                        </div>
+                        <p class="skill-description">Stateful coordination with RPC, SQLite, and WebSockets on Cloudflare's edge.</p>
+                        <div class="skill-meta">By Cloudflare Team</div>
+                        <div class="install-cmd">/plugin marketplace add cloudflare/skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/cloudflare/skills/tree/main/agents-sdk" class="skill-name" target="_blank">Cloudflare Agents SDK</a>
+                            <span class="skill-badge official">Official</span>
+                        </div>
+                        <p class="skill-description">Build stateful AI agents with scheduling, RPC, and MCP servers on Cloudflare.</p>
+                        <div class="skill-meta">By Cloudflare Team</div>
+                        <div class="install-cmd">/plugin marketplace add cloudflare/skills</div>
+                    </article>
+
+                    <!-- Stripe -->
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/stripe/ai/tree/main/skills/stripe-best-practices" class="skill-name" target="_blank">Stripe Best Practices</a>
+                            <span class="skill-badge official">Official</span>
+                        </div>
+                        <p class="skill-description">Best practices for building Stripe payment integrations including checkout, subscriptions, and webhooks.</p>
+                        <div class="skill-meta">By Stripe Team</div>
+                        <div class="install-cmd">/plugin marketplace add stripe/ai</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/stripe/ai/tree/main/skills/upgrade-stripe" class="skill-name" target="_blank">Upgrade Stripe</a>
+                            <span class="skill-badge official">Official</span>
+                        </div>
+                        <p class="skill-description">Upgrade Stripe SDK and API versions safely with migration guidance.</p>
+                        <div class="skill-meta">By Stripe Team</div>
+                        <div class="install-cmd">/plugin marketplace add stripe/ai</div>
+                    </article>
+
+                    <!-- Vercel -->
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/vercel-labs/agent-skills/tree/main/skills/claude.ai/vercel-deploy-claimable" class="skill-name" target="_blank">Vercel Deploy</a>
+                            <span class="skill-badge official">Official</span>
+                        </div>
+                        <p class="skill-description">Deploy projects to Vercel directly from Claude Code with automatic domain setup.</p>
+                        <div class="skill-meta">By Vercel Labs</div>
+                        <div class="install-cmd">/plugin marketplace add vercel-labs/agent-skills</div>
+                    </article>
+
+                    <!-- Hugging Face -->
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/huggingface/skills/tree/main/skills/hugging-face-cli" class="skill-name" target="_blank">HF Hub CLI</a>
+                            <span class="skill-badge official">Official</span>
+                        </div>
+                        <p class="skill-description">HF Hub CLI for models, datasets, repos, and compute jobs on Hugging Face infrastructure.</p>
+                        <div class="skill-meta">By Hugging Face Team</div>
+                        <div class="install-cmd">/plugin marketplace add huggingface/skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/huggingface/skills/tree/main/skills/hugging-face-model-trainer" class="skill-name" target="_blank">HF Model Trainer</a>
+                            <span class="skill-badge official">Official</span>
+                        </div>
+                        <p class="skill-description">Train models with TRL: SFT, DPO, GRPO, GGUF conversion on Hugging Face infrastructure.</p>
+                        <div class="skill-meta">By Hugging Face Team</div>
+                        <div class="install-cmd">/plugin marketplace add huggingface/skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/huggingface/skills/tree/main/skills/hugging-face-jobs" class="skill-name" target="_blank">HF Jobs</a>
+                            <span class="skill-badge official">Official</span>
+                        </div>
+                        <p class="skill-description">Run compute jobs and Python scripts on Hugging Face infrastructure.</p>
+                        <div class="skill-meta">By Hugging Face Team</div>
+                        <div class="install-cmd">/plugin marketplace add huggingface/skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/huggingface/skills/tree/main/skills/hugging-face-tool-builder" class="skill-name" target="_blank">HF Tool Builder</a>
+                            <span class="skill-badge official">Official</span>
+                        </div>
+                        <p class="skill-description">Build reusable scripts for Hugging Face API operations.</p>
+                        <div class="skill-meta">By Hugging Face Team</div>
+                        <div class="install-cmd">/plugin marketplace add huggingface/skills</div>
+                    </article>
+
+                    <!-- Expo -->
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/expo/skills" class="skill-name" target="_blank">Expo Skills</a>
+                            <span class="skill-badge official">Official</span>
+                        </div>
+                        <p class="skill-description">Build, deploy, and debug Expo apps with official skills from the Expo team.</p>
+                        <div class="skill-meta">By Expo Team</div>
+                        <div class="install-cmd">/plugin marketplace add expo/skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/expo/skills/tree/main/plugins/expo-deployment" class="skill-name" target="_blank">Expo Deployment</a>
+                            <span class="skill-badge official">Official</span>
+                        </div>
+                        <p class="skill-description">Deploy Expo apps to production with EAS Build and Submit.</p>
+                        <div class="skill-meta">By Expo Team</div>
+                        <div class="install-cmd">/plugin marketplace add expo/skills</div>
+                    </article>
+
+                    <!-- Sentry -->
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/getsentry/skills" class="skill-name" target="_blank">Sentry Skills</a>
+                            <span class="skill-badge official">Official</span>
+                        </div>
+                        <p class="skill-description">Code review, commits, PRs, and bug finding skills from Sentry's internal team.</p>
+                        <div class="skill-meta">By Sentry Team</div>
+                        <div class="install-cmd">/plugin marketplace add getsentry/skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/getsentry/skills/tree/main/plugins/sentry-skills/skills/code-review" class="skill-name" target="_blank">Sentry Code Review</a>
+                            <span class="skill-badge official">Official</span>
+                        </div>
+                        <p class="skill-description">Performance-focused code review based on Sentry's internal standards.</p>
+                        <div class="skill-meta">By Sentry Team</div>
+                        <div class="install-cmd">/plugin marketplace add getsentry/skills</div>
+                    </article>
+
+                    <!-- Other Integrations -->
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/better-auth/skills" class="skill-name" target="_blank">Better Auth Skills</a>
+                        </div>
+                        <p class="skill-description">Authentication setup with Better Auth including best practices and CLI commands.</p>
+                        <div class="skill-meta">By Better Auth</div>
+                        <div class="install-cmd">/plugin marketplace add better-auth/skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/tinybirdco/skills" class="skill-name" target="_blank">Tinybird Best Practices</a>
+                        </div>
+                        <p class="skill-description">Tinybird project guidelines for datasources, pipes, endpoints, and SQL.</p>
+                        <div class="skill-meta">By Tinybird</div>
+                        <div class="install-cmd">/plugin marketplace add tinybirdco/skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/ComposioHQ/awesome-claude-skills/tree/master/connect" class="skill-name" target="_blank">Connect 500+ Apps</a>
+                        </div>
+                        <p class="skill-description">Connect Claude to any app - send emails, create issues, post to Slack across 500+ services via Composio.</p>
+                        <div class="skill-meta">By ComposioHQ</div>
+                        <div class="install-cmd">git clone https://github.com/ComposioHQ/awesome-claude-skills ~/.claude/skills/</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/yusufkaraaslan/Skill_Seekers" class="skill-name" target="_blank">Skill Seekers</a>
+                        </div>
+                        <p class="skill-description">Convert any documentation website into a Claude AI skill automatically in minutes.</p>
+                        <div class="skill-meta">By yusufkaraaslan</div>
+                        <div class="install-cmd">git clone https://github.com/yusufkaraaslan/Skill_Seekers ~/.claude/skills/</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/ykdojo/claude-code-tips/tree/main/skills/reddit-fetch" class="skill-name" target="_blank">Reddit Fetch</a>
+                        </div>
+                        <p class="skill-description">Fetch Reddit content via Gemini CLI when WebFetch is blocked or returns 403 errors.</p>
+                        <div class="skill-meta">By ykdojo</div>
+                        <div class="install-cmd">git clone https://github.com/ykdojo/claude-code-tips ~/.claude/skills/</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/google-labs-code/stitch-skills/tree/main/skills/design-md" class="skill-name" target="_blank">Stitch Design.md</a>
+                        </div>
+                        <p class="skill-description">Create and manage DESIGN.md files for Stitch MCP server integration.</p>
+                        <div class="skill-meta">By Google Labs</div>
+                        <div class="install-cmd">/plugin marketplace add google-labs-code/stitch-skills</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-item open">
+                    <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">What are Claude Code integration skills? <span>▼</span></div>
+                    <div class="faq-answer">Integration skills connect Claude Code with external platforms and services like Cloudflare, Stripe, Vercel, Expo, Hugging Face, and Supabase. They teach Claude platform-specific best practices and enable direct deployments and API interactions.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">Are these official skills from the platform teams? <span>▼</span></div>
+                    <div class="faq-answer">Many integration skills are created and maintained by the platform teams themselves (Cloudflare, Stripe, Hugging Face, Expo, Sentry, etc.), ensuring they follow official best practices and stay up-to-date with API changes.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">Can I deploy directly to cloud platforms from Claude Code? <span>▼</span></div>
+                    <div class="faq-answer">Yes! Skills like Vercel Deploy, Cloudflare Wrangler, and Expo Deployment enable direct deployments from Claude Code. Claude can build and deploy your applications with a single command.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="/">All Skills</a>
+                <a href="/productivity.html">Productivity</a>
+                <a href="/coding.html">Coding</a>
+                <a href="/research.html">Research</a>
+                <a href="/automation.html">Automation</a>
+                <a href="/integration.html">Integration</a>
+                <a href="/submit.html">Submit Skill</a>
+            </div>
+            <p class="footer-text">Made with ❤️ by the Claude Code community.</p>
+        </div>
+    </footer>
+
+    <script>
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
+</body>
+</html>

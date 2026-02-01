@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Productivity Skills for Claude Code | Document, Planning & Workflow Skills</title>
+    <meta name="title" content="Productivity Skills for Claude Code | Document, Planning & Workflow Skills">
+    <meta name="description" content="Discover 20+ productivity skills for Claude Code including document creation (DOCX, PDF, PPTX, XLSX), planning workflows, project management integrations, and collaboration tools.">
+    <meta name="keywords" content="Claude Code productivity skills, document skills, PDF skill, Word skill, Excel skill, PowerPoint skill, planning skills, workflow automation">
+    <meta name="author" content="Awesome Claude Code Skills Community">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://awesome-claude-code-skills.com/productivity.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://awesome-claude-code-skills.com/productivity.html">
+    <meta property="og:title" content="Productivity Skills for Claude Code | Document & Workflow Skills">
+    <meta property="og:description" content="20+ productivity skills for Claude Code: document creation, planning workflows, project management, and collaboration tools.">
+    <meta property="og:image" content="https://awesome-claude-code-skills.com/og-productivity.png">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Productivity Skills for Claude Code">
+    <meta name="twitter:description" content="20+ productivity skills: document creation, planning, project management, collaboration.">
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Productivity Skills for Claude Code",
+        "description": "Curated collection of 20+ productivity skills for Claude Code including document creation, planning workflows, and project management integrations.",
+        "url": "https://awesome-claude-code-skills.com/productivity.html",
+        "mainEntity": {
+            "@type": "ItemList",
+            "name": "Productivity Skills Directory",
+            "numberOfItems": 20,
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@type": "SoftwareApplication",
+                        "name": "DOCX Skill",
+                        "description": "Create, edit, and analyze Word documents with tracked changes, comments, and formatting preservation",
+                        "author": {"@type": "Organization", "name": "Anthropic"},
+                        "applicationCategory": "Productivity"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@type": "SoftwareApplication",
+                        "name": "PDF Skill",
+                        "description": "Extract text, create PDFs, merge/split documents, and handle forms",
+                        "author": {"@type": "Organization", "name": "Anthropic"},
+                        "applicationCategory": "Productivity"
+                    }
+                }
+            ]
+        },
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://awesome-claude-code-skills.com/"},
+                {"@type": "ListItem", "position": 2, "name": "Productivity Skills", "item": "https://awesome-claude-code-skills.com/productivity.html"}
+            ]
+        },
+        "dateModified": "2026-02-01"
+    }
+    </script>
+    
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What are Claude Code productivity skills?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Productivity skills are specialized instructions that teach Claude Code how to perform document creation, planning, project management, and workflow automation tasks. They include official skills like DOCX, PDF, PPTX, and XLSX from Anthropic, as well as community skills for Linear, Notion, and other productivity tools."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I install productivity skills in Claude Code?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Install productivity skills using the command: /plugin marketplace add anthropics/skills for official document skills, or /plugin marketplace add [author]/[repo] for community skills. You can also clone skills to ~/.claude/skills/ directory."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What document formats can Claude Code create?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "With the official document skills, Claude Code can create and edit Word documents (DOCX), PowerPoint presentations (PPTX), Excel spreadsheets (XLSX), and PDF files. These skills support formatting, charts, formulas, and complex layouts."
+                }
+            }
+        ]
+    }
+    </script>
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📋</text></svg>">
+    
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f6f8fa;
+            --bg-card: #ffffff;
+            --text-primary: #1f2328;
+            --text-secondary: #656d76;
+            --text-muted: #8b949e;
+            --border-color: #d0d7de;
+            --accent-color: #8b5cf6;
+            --accent-hover: #7c3aed;
+            --link-color: #0969da;
+            --tag-bg: #ddf4ff;
+            --tag-text: #0969da;
+        }
+        
+        [data-theme="dark"] {
+            --bg-primary: #0d1117;
+            --bg-secondary: #161b22;
+            --bg-card: #21262d;
+            --text-primary: #f0f6fc;
+            --text-secondary: #8b949e;
+            --text-muted: #6e7681;
+            --border-color: #30363d;
+            --accent-color: #a78bfa;
+            --accent-hover: #8b5cf6;
+            --link-color: #58a6ff;
+            --tag-bg: #388bfd26;
+            --tag-text: #58a6ff;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Header */
+        header {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+            padding: 16px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--text-primary);
+        }
+        
+        .logo-icon { font-size: 28px; }
+        .logo-text { font-size: 20px; font-weight: 600; }
+        
+        nav { display: flex; gap: 24px; }
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            padding: 8px 12px;
+            border-radius: 6px;
+        }
+        nav a:hover, nav a.active {
+            background: var(--accent-color);
+            color: white;
+        }
+        
+        /* Hero */
+        .hero {
+            padding: 60px 0 40px;
+            background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+        }
+        
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        
+        .hero h1 .accent { color: var(--accent-color); }
+        
+        .hero-description {
+            font-size: 18px;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin-bottom: 24px;
+        }
+        
+        .breadcrumb {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+        
+        .breadcrumb a { color: var(--link-color); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        
+        /* Definition Section */
+        .definition-section {
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .definition-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+        }
+        
+        .definition-box h2 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: var(--accent-color);
+        }
+        
+        .definition-box p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        
+        /* Comparison Table */
+        .comparison-section {
+            padding: 40px 0;
+        }
+        
+        .comparison-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 24px;
+        }
+        
+        .comparison-table th,
+        .comparison-table td {
+            padding: 12px 16px;
+            text-align: left;
+            border: 1px solid var(--border-color);
+        }
+        
+        .comparison-table th {
+            background: var(--bg-secondary);
+            font-weight: 600;
+        }
+        
+        .comparison-table tr:hover {
+            background: var(--bg-secondary);
+        }
+        
+        .comparison-table a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+        
+        /* Skills Grid */
+        .skills-section { padding: 40px 0; }
+        
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+        
+        .section-title { font-size: 24px; font-weight: 600; }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        
+        .skill-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.2s;
+        }
+        
+        .skill-card:hover {
+            border-color: var(--accent-color);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .skill-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+        
+        .skill-name {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--link-color);
+            text-decoration: none;
+        }
+        
+        .skill-name:hover { text-decoration: underline; }
+        
+        .skill-badge {
+            font-size: 11px;
+            padding: 4px 8px;
+            border-radius: 12px;
+            background: var(--accent-color);
+            color: white;
+            font-weight: 500;
+        }
+        
+        .skill-description {
+            color: var(--text-secondary);
+            font-size: 14px;
+            margin-bottom: 16px;
+            line-height: 1.5;
+        }
+        
+        .skill-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+        
+        .install-cmd {
+            background: var(--bg-secondary);
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-family: monospace;
+            font-size: 12px;
+            margin-top: 12px;
+            overflow-x: auto;
+        }
+        
+        /* FAQ Section */
+        .faq-section {
+            padding: 40px 0;
+            background: var(--bg-secondary);
+        }
+        
+        .faq-section h2 {
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+        
+        .faq-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin-bottom: 12px;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 16px 20px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-question:hover { background: var(--bg-secondary); }
+        
+        .faq-answer {
+            padding: 0 20px 16px;
+            color: var(--text-secondary);
+            display: none;
+        }
+        
+        .faq-item.open .faq-answer { display: block; }
+        
+        /* Footer */
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            margin-bottom: 24px;
+        }
+        
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+        }
+        
+        .footer-text { color: var(--text-muted); font-size: 13px; }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 28px; }
+            .skills-grid { grid-template-columns: 1fr; }
+            nav { display: none; }
+            .comparison-table { font-size: 14px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="/" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">Awesome Claude Code Skills</span>
+            </a>
+            <nav>
+                <a href="/">All Skills</a>
+                <a href="/productivity.html" class="active">Productivity</a>
+                <a href="/coding.html">Coding</a>
+                <a href="/research.html">Research</a>
+                <a href="/automation.html">Automation</a>
+                <a href="/integration.html">Integration</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="/">Home</a> / <span>Productivity Skills</span>
+                </nav>
+                <h1><span class="accent">Productivity</span> Skills</h1>
+                <p class="hero-description">
+                    Document creation, planning workflows, project management integrations, and collaboration tools 
+                    to boost your productivity with Claude Code.
+                </p>
+            </div>
+        </section>
+
+        <!-- Definition Section -->
+        <section class="definition-section">
+            <div class="container">
+                <div class="definition-box">
+                    <h2>What are Productivity Skills?</h2>
+                    <p>
+                        <strong>Productivity skills</strong> are specialized Claude Code skills that help you create documents, 
+                        manage projects, plan workflows, and collaborate more effectively. They include official Anthropic skills 
+                        for creating Word documents, PDFs, PowerPoint presentations, and Excel spreadsheets, as well as community 
+                        skills for integrating with project management tools like Linear and Notion.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Table -->
+        <section class="comparison-section">
+            <div class="container">
+                <h2>Document Skills Comparison</h2>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Skill</th>
+                            <th>Format</th>
+                            <th>Create</th>
+                            <th>Edit</th>
+                            <th>Extract</th>
+                            <th>Author</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="https://github.com/anthropics/skills/tree/main/skills/docx">DOCX</a></td>
+                            <td>Word (.docx)</td>
+                            <td>✅</td>
+                            <td>✅</td>
+                            <td>✅</td>
+                            <td>Anthropic</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://github.com/anthropics/skills/tree/main/skills/pdf">PDF</a></td>
+                            <td>PDF (.pdf)</td>
+                            <td>✅</td>
+                            <td>✅</td>
+                            <td>✅</td>
+                            <td>Anthropic</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://github.com/anthropics/skills/tree/main/skills/pptx">PPTX</a></td>
+                            <td>PowerPoint (.pptx)</td>
+                            <td>✅</td>
+                            <td>✅</td>
+                            <td>✅</td>
+                            <td>Anthropic</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://github.com/anthropics/skills/tree/main/skills/xlsx">XLSX</a></td>
+                            <td>Excel (.xlsx)</td>
+                            <td>✅</td>
+                            <td>✅</td>
+                            <td>✅</td>
+                            <td>Anthropic</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://github.com/smerchek/claude-epub-skill">EPUB</a></td>
+                            <td>eBook (.epub)</td>
+                            <td>✅</td>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>smerchek</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>Planning Skills Comparison</h2>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Skill</th>
+                            <th>Best For</th>
+                            <th>Key Features</th>
+                            <th>Author</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="https://github.com/obra/superpowers">Superpowers</a></td>
+                            <td>Full workflow</td>
+                            <td>Brainstorming, plan writing, execution</td>
+                            <td>obra</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://github.com/anthropics/skills/tree/main/skills/skill-creator">Skill Creator</a></td>
+                            <td>Building skills</td>
+                            <td>Interactive Q&A, templates</td>
+                            <td>Anthropic</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://github.com/wrsmith108/linear-claude-skill">Linear</a></td>
+                            <td>Issue tracking</td>
+                            <td>Create/manage issues, projects</td>
+                            <td>wrsmith108</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Skills Grid -->
+        <section class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">All Productivity Skills</h2>
+                </div>
+                <div class="skills-grid" id="skills-grid">
+                    <!-- Official Document Skills -->
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/anthropics/skills/tree/main/skills/docx" class="skill-name" target="_blank">DOCX Skill</a>
+                            <span class="skill-badge">Official</span>
+                        </div>
+                        <p class="skill-description">Create, edit, and analyze Word documents with support for tracked changes, comments, formatting preservation, and text extraction.</p>
+                        <div class="skill-meta">
+                            <span>By Anthropic</span>
+                        </div>
+                        <div class="install-cmd">/plugin install document-skills@anthropic-agent-skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/anthropics/skills/tree/main/skills/pdf" class="skill-name" target="_blank">PDF Skill</a>
+                            <span class="skill-badge">Official</span>
+                        </div>
+                        <p class="skill-description">Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms.</p>
+                        <div class="skill-meta">
+                            <span>By Anthropic</span>
+                        </div>
+                        <div class="install-cmd">/plugin install document-skills@anthropic-agent-skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/anthropics/skills/tree/main/skills/pptx" class="skill-name" target="_blank">PPTX Skill</a>
+                            <span class="skill-badge">Official</span>
+                        </div>
+                        <p class="skill-description">Create, edit, and analyze PowerPoint presentations with support for layouts, templates, charts, and automated slide generation.</p>
+                        <div class="skill-meta">
+                            <span>By Anthropic</span>
+                        </div>
+                        <div class="install-cmd">/plugin install document-skills@anthropic-agent-skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/anthropics/skills/tree/main/skills/xlsx" class="skill-name" target="_blank">XLSX Skill</a>
+                            <span class="skill-badge">Official</span>
+                        </div>
+                        <p class="skill-description">Create, edit, and analyze Excel spreadsheets with support for formulas, formatting, data analysis, and visualization.</p>
+                        <div class="skill-meta">
+                            <span>By Anthropic</span>
+                        </div>
+                        <div class="install-cmd">/plugin install document-skills@anthropic-agent-skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/anthropics/skills/tree/main/skills/doc-coauthoring" class="skill-name" target="_blank">Doc Co-authoring</a>
+                            <span class="skill-badge">Official</span>
+                        </div>
+                        <p class="skill-description">Collaborative document editing and co-authoring workflows for team document creation.</p>
+                        <div class="skill-meta">
+                            <span>By Anthropic</span>
+                        </div>
+                        <div class="install-cmd">/plugin marketplace add anthropics/skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/anthropics/skills/tree/main/skills/skill-creator" class="skill-name" target="_blank">Skill Creator</a>
+                            <span class="skill-badge">Official</span>
+                        </div>
+                        <p class="skill-description">Interactive skill creation tool that guides you through building new skills with Q&A. Create your own skills easily.</p>
+                        <div class="skill-meta">
+                            <span>By Anthropic</span>
+                        </div>
+                        <div class="install-cmd">/plugin install example-skills@anthropic-agent-skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/anthropics/skills/tree/main/skills/internal-comms" class="skill-name" target="_blank">Internal Comms</a>
+                            <span class="skill-badge">Official</span>
+                        </div>
+                        <p class="skill-description">Write internal communications like status reports, newsletters, FAQs, and announcements with consistent formatting.</p>
+                        <div class="skill-meta">
+                            <span>By Anthropic</span>
+                        </div>
+                        <div class="install-cmd">/plugin install example-skills@anthropic-agent-skills</div>
+                    </article>
+
+                    <!-- Superpowers Collection -->
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/obra/superpowers" class="skill-name" target="_blank">Superpowers</a>
+                            <span class="skill-badge">Popular</span>
+                        </div>
+                        <p class="skill-description">Core skills library with 20+ battle-tested skills including brainstorming, plan writing, plan execution, and collaboration patterns.</p>
+                        <div class="skill-meta">
+                            <span>By Jesse Vincent (obra)</span>
+                        </div>
+                        <div class="install-cmd">/plugin marketplace add obra/superpowers-marketplace</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/obra/superpowers/blob/main/skills/brainstorming/SKILL.md" class="skill-name" target="_blank">Brainstorming</a>
+                        </div>
+                        <p class="skill-description">Generate and explore ideas systematically with structured brainstorming workflows. Part of Superpowers.</p>
+                        <div class="skill-meta">
+                            <span>By obra</span>
+                        </div>
+                        <div class="install-cmd">/plugin marketplace add obra/superpowers-marketplace</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/obra/superpowers/blob/main/skills/writing-plans/SKILL.md" class="skill-name" target="_blank">Writing Plans</a>
+                        </div>
+                        <p class="skill-description">Create strategic documentation and project plans with structured templates and best practices.</p>
+                        <div class="skill-meta">
+                            <span>By obra</span>
+                        </div>
+                        <div class="install-cmd">/plugin marketplace add obra/superpowers-marketplace</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/obra/superpowers/blob/main/skills/executing-plans/SKILL.md" class="skill-name" target="_blank">Executing Plans</a>
+                        </div>
+                        <p class="skill-description">Implement and run strategic plans with step-by-step execution guidance and progress tracking.</p>
+                        <div class="skill-meta">
+                            <span>By obra</span>
+                        </div>
+                        <div class="install-cmd">/plugin marketplace add obra/superpowers-marketplace</div>
+                    </article>
+
+                    <!-- Project Management -->
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/wrsmith108/linear-claude-skill" class="skill-name" target="_blank">Linear Claude Skill</a>
+                        </div>
+                        <p class="skill-description">Manage Linear issues, projects, and teams directly from Claude Code with full API integration.</p>
+                        <div class="skill-meta">
+                            <span>By wrsmith108</span>
+                        </div>
+                        <div class="install-cmd">git clone https://github.com/wrsmith108/linear-claude-skill ~/.claude/skills/</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/op7418/NanoBanana-PPT-Skills" class="skill-name" target="_blank">NanoBanana PPT Skills</a>
+                        </div>
+                        <p class="skill-description">AI-powered PowerPoint generation with document analysis and styled images for professional presentations.</p>
+                        <div class="skill-meta">
+                            <span>By op7418</span>
+                        </div>
+                        <div class="install-cmd">git clone https://github.com/op7418/NanoBanana-PPT-Skills ~/.claude/skills/</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/smerchek/claude-epub-skill" class="skill-name" target="_blank">Markdown to EPUB</a>
+                        </div>
+                        <p class="skill-description">Convert markdown documents and chat summaries into professional EPUB ebook files.</p>
+                        <div class="skill-meta">
+                            <span>By smerchek</span>
+                        </div>
+                        <div class="install-cmd">git clone https://github.com/smerchek/claude-epub-skill ~/.claude/skills/</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/bluzername/claude-code-terminal-title" class="skill-name" target="_blank">Terminal Title</a>
+                        </div>
+                        <p class="skill-description">Gives each Claude Code terminal window a dynamic title describing the work being done.</p>
+                        <div class="skill-meta">
+                            <span>By bluzername</span>
+                        </div>
+                        <div class="install-cmd">git clone https://github.com/bluzername/claude-code-terminal-title ~/.claude/skills/</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/getsentry/skills/tree/main/plugins/sentry-skills/skills/agents-md" class="skill-name" target="_blank">AGENTS.md Generator</a>
+                        </div>
+                        <p class="skill-description">Generate and manage AGENTS.md files for AI agent configuration in your projects.</p>
+                        <div class="skill-meta">
+                            <span>By Sentry</span>
+                        </div>
+                        <div class="install-cmd">/plugin marketplace add getsentry/skills</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-item open">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        What are Claude Code productivity skills?
+                        <span>▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Productivity skills are specialized instructions that teach Claude Code how to perform document creation, planning, project management, and workflow automation tasks. They include official skills like DOCX, PDF, PPTX, and XLSX from Anthropic, as well as community skills for Linear, Notion, and other productivity tools.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        How do I install productivity skills in Claude Code?
+                        <span>▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Install productivity skills using the command: <code>/plugin marketplace add anthropics/skills</code> for official document skills, or <code>/plugin marketplace add [author]/[repo]</code> for community skills. You can also clone skills to <code>~/.claude/skills/</code> directory.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        What document formats can Claude Code create?
+                        <span>▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        With the official document skills, Claude Code can create and edit Word documents (DOCX), PowerPoint presentations (PPTX), Excel spreadsheets (XLSX), and PDF files. These skills support formatting, charts, formulas, and complex layouts. Community skills also add support for EPUB ebooks.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Which productivity skill should I start with?
+                        <span>▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Start with the official document skills (<code>/plugin install document-skills@anthropic-agent-skills</code>) for document creation. For planning and workflow management, try obra's Superpowers collection which includes brainstorming, plan writing, and execution skills.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Can I use these skills with Claude.ai and the API?
+                        <span>▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! Skills work across Claude Code CLI, Claude.ai web interface (for paid plans), and the Claude API. The skill format is standardized across all Claude platforms. See Anthropic's documentation for platform-specific installation instructions.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="/">All Skills</a>
+                <a href="/productivity.html">Productivity</a>
+                <a href="/coding.html">Coding</a>
+                <a href="/research.html">Research</a>
+                <a href="/automation.html">Automation</a>
+                <a href="/integration.html">Integration</a>
+                <a href="/submit.html">Submit Skill</a>
+            </div>
+            <p class="footer-text">
+                Made with ❤️ by the Claude Code community. Not affiliated with Anthropic.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleFaq(element) {
+            const item = element.parentElement;
+            item.classList.toggle('open');
+        }
+        
+        // Theme detection
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
+</body>
+</html>

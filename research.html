@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Research Skills for Claude Code | Data Analysis & Scientific Skills</title>
+    <meta name="description" content="15+ research skills for Claude Code: scientific analysis, data visualization with D3.js, deep research agents, ML evaluation, and competitive analysis tools.">
+    <meta name="keywords" content="Claude Code research skills, data visualization, D3.js, scientific analysis, ML evaluation, competitive analysis">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://awesome-claude-code-skills.com/research.html">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://awesome-claude-code-skills.com/research.html">
+    <meta property="og:title" content="Research Skills for Claude Code | Data Analysis & Scientific Skills">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Research Skills for Claude Code",
+        "description": "Curated collection of research skills for data analysis, visualization, and scientific workflows.",
+        "url": "https://awesome-claude-code-skills.com/research.html",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://awesome-claude-code-skills.com/"},
+                {"@type": "ListItem", "position": 2, "name": "Research Skills", "item": "https://awesome-claude-code-skills.com/research.html"}
+            ]
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What are Claude Code research skills?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Research skills help Claude Code with data analysis, visualization, scientific workflows, ML evaluation, and competitive research. They include D3.js for visualizations, scientific libraries, and autonomous research agents."
+                }
+            }
+        ]
+    }
+    </script>
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔬</text></svg>">
+    
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f6f8fa;
+            --bg-card: #ffffff;
+            --text-primary: #1f2328;
+            --text-secondary: #656d76;
+            --text-muted: #8b949e;
+            --border-color: #d0d7de;
+            --accent-color: #3b82f6;
+            --link-color: #0969da;
+        }
+        [data-theme="dark"] {
+            --bg-primary: #0d1117;
+            --bg-secondary: #161b22;
+            --bg-card: #21262d;
+            --text-primary: #f0f6fc;
+            --text-secondary: #8b949e;
+            --text-muted: #6e7681;
+            --border-color: #30363d;
+            --accent-color: #60a5fa;
+            --link-color: #58a6ff;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg-primary); color: var(--text-primary); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header { background: var(--bg-secondary); border-bottom: 1px solid var(--border-color); padding: 16px 0; position: sticky; top: 0; z-index: 100; }
+        .header-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--text-primary); }
+        .logo-icon { font-size: 28px; }
+        .logo-text { font-size: 20px; font-weight: 600; }
+        nav { display: flex; gap: 24px; }
+        nav a { color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 8px 12px; border-radius: 6px; }
+        nav a:hover, nav a.active { background: var(--accent-color); color: white; }
+        .hero { padding: 60px 0 40px; background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%); }
+        .hero h1 { font-size: 42px; font-weight: 700; margin-bottom: 16px; }
+        .hero h1 .accent { color: var(--accent-color); }
+        .hero-description { font-size: 18px; color: var(--text-secondary); max-width: 700px; margin-bottom: 24px; }
+        .breadcrumb { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; }
+        .breadcrumb a { color: var(--link-color); text-decoration: none; }
+        .definition-section { padding: 40px 0; border-bottom: 1px solid var(--border-color); }
+        .definition-box { background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 12px; padding: 24px; }
+        .definition-box h2 { font-size: 20px; margin-bottom: 12px; color: var(--accent-color); }
+        .definition-box p { color: var(--text-secondary); line-height: 1.7; }
+        .comparison-section { padding: 40px 0; }
+        .comparison-section h2 { font-size: 24px; margin-bottom: 20px; }
+        .comparison-table { width: 100%; border-collapse: collapse; margin-bottom: 24px; }
+        .comparison-table th, .comparison-table td { padding: 12px 16px; text-align: left; border: 1px solid var(--border-color); }
+        .comparison-table th { background: var(--bg-secondary); font-weight: 600; }
+        .comparison-table a { color: var(--link-color); text-decoration: none; }
+        .skills-section { padding: 40px 0; }
+        .section-title { font-size: 24px; font-weight: 600; margin-bottom: 24px; }
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 20px; }
+        .skill-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 20px; transition: all 0.2s; }
+        .skill-card:hover { border-color: var(--accent-color); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); }
+        .skill-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
+        .skill-name { font-size: 18px; font-weight: 600; color: var(--link-color); text-decoration: none; }
+        .skill-name:hover { text-decoration: underline; }
+        .skill-badge { font-size: 11px; padding: 4px 8px; border-radius: 12px; background: var(--accent-color); color: white; font-weight: 500; }
+        .skill-description { color: var(--text-secondary); font-size: 14px; margin-bottom: 16px; line-height: 1.5; }
+        .skill-meta { font-size: 13px; color: var(--text-muted); }
+        .install-cmd { background: var(--bg-secondary); padding: 8px 12px; border-radius: 6px; font-family: monospace; font-size: 12px; margin-top: 12px; }
+        .faq-section { padding: 40px 0; background: var(--bg-secondary); }
+        .faq-section h2 { font-size: 24px; margin-bottom: 24px; }
+        .faq-item { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; margin-bottom: 12px; }
+        .faq-question { padding: 16px 20px; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; }
+        .faq-question:hover { background: var(--bg-secondary); }
+        .faq-answer { padding: 0 20px 16px; color: var(--text-secondary); display: none; }
+        .faq-item.open .faq-answer { display: block; }
+        footer { background: var(--bg-secondary); border-top: 1px solid var(--border-color); padding: 40px 0; text-align: center; }
+        .footer-links { display: flex; justify-content: center; gap: 32px; margin-bottom: 24px; }
+        .footer-links a { color: var(--text-secondary); text-decoration: none; font-size: 14px; }
+        .footer-text { color: var(--text-muted); font-size: 13px; }
+        @media (max-width: 768px) { .hero h1 { font-size: 28px; } .skills-grid { grid-template-columns: 1fr; } nav { display: none; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="/" class="logo"><span class="logo-icon">⚡</span><span class="logo-text">Awesome Claude Code Skills</span></a>
+            <nav>
+                <a href="/">All Skills</a>
+                <a href="/productivity.html">Productivity</a>
+                <a href="/coding.html">Coding</a>
+                <a href="/research.html" class="active">Research</a>
+                <a href="/automation.html">Automation</a>
+                <a href="/integration.html">Integration</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <nav class="breadcrumb"><a href="/">Home</a> / <span>Research Skills</span></nav>
+                <h1><span class="accent">Research</span> Skills</h1>
+                <p class="hero-description">Data analysis, scientific workflows, visualizations, and competitive research tools to enhance your research capabilities with Claude Code.</p>
+            </div>
+        </section>
+
+        <section class="definition-section">
+            <div class="container">
+                <div class="definition-box">
+                    <h2>What are Research Skills?</h2>
+                    <p><strong>Research skills</strong> help Claude Code with data analysis, visualization, scientific workflows, and competitive research. They include D3.js for interactive visualizations, scientific libraries for specialized domains, autonomous research agents, and ML evaluation tools from Hugging Face.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="comparison-section">
+            <div class="container">
+                <h2>Research Skills Comparison</h2>
+                <table class="comparison-table">
+                    <thead>
+                        <tr><th>Skill</th><th>Best For</th><th>Output Types</th><th>Author</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><a href="https://github.com/chrisvoncsefalvay/claude-d3js-skill">D3.js Visualization</a></td><td>Interactive charts</td><td>SVG, HTML</td><td>chrisvoncsefalvay</td></tr>
+                        <tr><td><a href="https://github.com/K-Dense-AI/claude-scientific-skills">Scientific Skills</a></td><td>Scientific analysis</td><td>Data, reports</td><td>K-Dense-AI</td></tr>
+                        <tr><td><a href="https://github.com/sanjay3290/ai-skills/tree/main/skills/deep-research">Deep Research</a></td><td>Autonomous research</td><td>Reports</td><td>sanjay3290</td></tr>
+                        <tr><td><a href="https://github.com/huggingface/skills/tree/main/skills/hugging-face-evaluation">HF Evaluation</a></td><td>ML model eval</td><td>Tables, metrics</td><td>Hugging Face</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <div class="container">
+                <h2 class="section-title">All Research Skills</h2>
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/K-Dense-AI/claude-scientific-skills" class="skill-name" target="_blank">Claude Scientific Skills</a>
+                            <span class="skill-badge">Popular</span>
+                        </div>
+                        <p class="skill-description">Comprehensive collection of ready-to-use scientific skills, including working with specialized scientific libraries and databases.</p>
+                        <div class="skill-meta">By K-Dense-AI</div>
+                        <div class="install-cmd">git clone https://github.com/K-Dense-AI/claude-scientific-skills ~/.claude/skills/</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/chrisvoncsefalvay/claude-d3js-skill" class="skill-name" target="_blank">D3.js Visualizations</a>
+                        </div>
+                        <p class="skill-description">Create data visualizations in D3.js with Claude Code for interactive charts, graphics, and data storytelling.</p>
+                        <div class="skill-meta">By chrisvoncsefalvay</div>
+                        <div class="install-cmd">git clone https://github.com/chrisvoncsefalvay/claude-d3js-skill ~/.claude/skills/</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/sanjay3290/ai-skills/tree/main/skills/deep-research" class="skill-name" target="_blank">Deep Research</a>
+                        </div>
+                        <p class="skill-description">Execute autonomous multi-step research using Gemini Deep Research Agent for market analysis, competitive landscaping, and literature reviews.</p>
+                        <div class="skill-meta">By sanjay3290</div>
+                        <div class="install-cmd">git clone https://github.com/sanjay3290/ai-skills ~/.claude/skills/</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/ComposioHQ/awesome-claude-skills/tree/master/content-research-writer" class="skill-name" target="_blank">Content Research Writer</a>
+                        </div>
+                        <p class="skill-description">Enhance writing with integrated research capabilities for well-sourced, authoritative content.</p>
+                        <div class="skill-meta">By ComposioHQ</div>
+                        <div class="install-cmd">git clone https://github.com/ComposioHQ/awesome-claude-skills ~/.claude/skills/</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/ComposioHQ/awesome-claude-skills/tree/master/competitive-ads-extractor" class="skill-name" target="_blank">Competitive Ads Extractor</a>
+                        </div>
+                        <p class="skill-description">Analyze competitor advertising strategies and extract insights for marketing research and competitive analysis.</p>
+                        <div class="skill-meta">By ComposioHQ</div>
+                        <div class="install-cmd">git clone https://github.com/ComposioHQ/awesome-claude-skills ~/.claude/skills/</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/ComposioHQ/awesome-claude-skills/tree/master/meeting-insights-analyzer" class="skill-name" target="_blank">Meeting Insights Analyzer</a>
+                        </div>
+                        <p class="skill-description">Analyze meeting communication patterns and extract actionable insights from meeting transcripts.</p>
+                        <div class="skill-meta">By ComposioHQ</div>
+                        <div class="install-cmd">git clone https://github.com/ComposioHQ/awesome-claude-skills ~/.claude/skills/</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/huggingface/skills/tree/main/skills/hugging-face-evaluation" class="skill-name" target="_blank">HF Model Evaluation</a>
+                        </div>
+                        <p class="skill-description">Model evaluation with vLLM/lighteval and evaluation tables for ML research and benchmarking.</p>
+                        <div class="skill-meta">By Hugging Face</div>
+                        <div class="install-cmd">/plugin marketplace add huggingface/skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/huggingface/skills/tree/main/skills/hugging-face-datasets" class="skill-name" target="_blank">HF Datasets</a>
+                        </div>
+                        <p class="skill-description">Create and manage datasets with configs and SQL querying on Hugging Face Hub.</p>
+                        <div class="skill-meta">By Hugging Face</div>
+                        <div class="install-cmd">/plugin marketplace add huggingface/skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/huggingface/skills/tree/main/skills/hugging-face-paper-publisher" class="skill-name" target="_blank">HF Paper Publisher</a>
+                        </div>
+                        <p class="skill-description">Publish papers on Hugging Face Hub with model and dataset links for reproducible research.</p>
+                        <div class="skill-meta">By Hugging Face</div>
+                        <div class="install-cmd">/plugin marketplace add huggingface/skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/huggingface/skills/tree/main/skills/hugging-face-trackio" class="skill-name" target="_blank">HF TrackIO</a>
+                        </div>
+                        <p class="skill-description">Track ML experiments with real-time dashboards for experiment management and collaboration.</p>
+                        <div class="skill-meta">By Hugging Face</div>
+                        <div class="install-cmd">/plugin marketplace add huggingface/skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill" class="skill-name" target="_blank">CSV Data Summarizer</a>
+                        </div>
+                        <p class="skill-description">Automatically analyzes CSV files and generates comprehensive insights with visualizations without prompts.</p>
+                        <div class="skill-meta">By coffeefuelbump</div>
+                        <div class="install-cmd">git clone https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill ~/.claude/skills/</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/sanjay3290/ai-skills/tree/main/skills/postgres" class="skill-name" target="_blank">PostgreSQL Research</a>
+                        </div>
+                        <p class="skill-description">Execute safe read-only SQL queries against PostgreSQL databases with multi-connection support for data analysis.</p>
+                        <div class="skill-meta">By sanjay3290</div>
+                        <div class="install-cmd">git clone https://github.com/sanjay3290/ai-skills ~/.claude/skills/</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/ComposioHQ/awesome-claude-skills/tree/master/langsmith-fetch" class="skill-name" target="_blank">LangSmith Fetch</a>
+                        </div>
+                        <p class="skill-description">Debug LangChain and LangGraph agents by fetching and analyzing execution traces from LangSmith Studio.</p>
+                        <div class="skill-meta">By OthmanAdi</div>
+                        <div class="install-cmd">git clone https://github.com/ComposioHQ/awesome-claude-skills ~/.claude/skills/</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-item open">
+                    <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">What are Claude Code research skills? <span>▼</span></div>
+                    <div class="faq-answer">Research skills help Claude Code with data analysis, visualization, scientific workflows, and competitive research. They include D3.js for interactive visualizations, scientific libraries for specialized domains, autonomous research agents, and ML evaluation tools.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">Which skill is best for data visualization? <span>▼</span></div>
+                    <div class="faq-answer">The D3.js Visualization skill is ideal for creating interactive, professional-quality charts and graphics. For simpler visualizations, the CSV Data Summarizer can automatically generate charts from your data.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">Can Claude Code do autonomous research? <span>▼</span></div>
+                    <div class="faq-answer">Yes! The Deep Research skill uses Gemini Deep Research Agent for autonomous multi-step research including market analysis, competitive landscaping, and literature reviews. It can gather and synthesize information automatically.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="/">All Skills</a>
+                <a href="/productivity.html">Productivity</a>
+                <a href="/coding.html">Coding</a>
+                <a href="/research.html">Research</a>
+                <a href="/automation.html">Automation</a>
+                <a href="/integration.html">Integration</a>
+                <a href="/submit.html">Submit Skill</a>
+            </div>
+            <p class="footer-text">Made with ❤️ by the Claude Code community.</p>
+        </div>
+    </footer>
+
+    <script>
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
+</body>
+</html>

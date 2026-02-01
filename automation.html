@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Automation Skills for Claude Code | Browser, Testing & Multi-Agent Skills</title>
+    <meta name="description" content="15+ automation skills for Claude Code: Playwright browser automation, iOS simulator testing, multi-agent orchestration, asset generation, and CI/CD workflows.">
+    <meta name="keywords" content="Claude Code automation skills, Playwright, browser automation, iOS simulator, multi-agent, parallel agents, CI/CD">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://awesome-claude-code-skills.com/automation.html">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://awesome-claude-code-skills.com/automation.html">
+    <meta property="og:title" content="Automation Skills for Claude Code | Browser & Multi-Agent Skills">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Automation Skills for Claude Code",
+        "description": "Curated collection of automation skills for browser testing, multi-agent orchestration, and workflow automation.",
+        "url": "https://awesome-claude-code-skills.com/automation.html",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://awesome-claude-code-skills.com/"},
+                {"@type": "ListItem", "position": 2, "name": "Automation Skills", "item": "https://awesome-claude-code-skills.com/automation.html"}
+            ]
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What are Claude Code automation skills?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Automation skills enable Claude Code to control browsers with Playwright, test iOS apps, orchestrate multiple AI agents in parallel, generate assets automatically, and integrate with CI/CD pipelines."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How does Playwright skill work with Claude Code?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The Playwright skill teaches Claude Code to automate web browsers for testing, scraping, and UI verification. It can navigate pages, fill forms, click buttons, take screenshots, and validate page content programmatically."
+                }
+            }
+        ]
+    }
+    </script>
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+    
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f6f8fa;
+            --bg-card: #ffffff;
+            --text-primary: #1f2328;
+            --text-secondary: #656d76;
+            --text-muted: #8b949e;
+            --border-color: #d0d7de;
+            --accent-color: #f59e0b;
+            --link-color: #0969da;
+        }
+        [data-theme="dark"] {
+            --bg-primary: #0d1117;
+            --bg-secondary: #161b22;
+            --bg-card: #21262d;
+            --text-primary: #f0f6fc;
+            --text-secondary: #8b949e;
+            --text-muted: #6e7681;
+            --border-color: #30363d;
+            --accent-color: #fbbf24;
+            --link-color: #58a6ff;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg-primary); color: var(--text-primary); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header { background: var(--bg-secondary); border-bottom: 1px solid var(--border-color); padding: 16px 0; position: sticky; top: 0; z-index: 100; }
+        .header-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--text-primary); }
+        .logo-icon { font-size: 28px; }
+        .logo-text { font-size: 20px; font-weight: 600; }
+        nav { display: flex; gap: 24px; }
+        nav a { color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 8px 12px; border-radius: 6px; }
+        nav a:hover, nav a.active { background: var(--accent-color); color: white; }
+        .hero { padding: 60px 0 40px; background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%); }
+        .hero h1 { font-size: 42px; font-weight: 700; margin-bottom: 16px; }
+        .hero h1 .accent { color: var(--accent-color); }
+        .hero-description { font-size: 18px; color: var(--text-secondary); max-width: 700px; margin-bottom: 24px; }
+        .breadcrumb { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; }
+        .breadcrumb a { color: var(--link-color); text-decoration: none; }
+        .definition-section { padding: 40px 0; border-bottom: 1px solid var(--border-color); }
+        .definition-box { background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 12px; padding: 24px; }
+        .definition-box h2 { font-size: 20px; margin-bottom: 12px; color: var(--accent-color); }
+        .definition-box p { color: var(--text-secondary); line-height: 1.7; }
+        .comparison-section { padding: 40px 0; }
+        .comparison-section h2 { font-size: 24px; margin-bottom: 20px; }
+        .comparison-table { width: 100%; border-collapse: collapse; margin-bottom: 24px; }
+        .comparison-table th, .comparison-table td { padding: 12px 16px; text-align: left; border: 1px solid var(--border-color); }
+        .comparison-table th { background: var(--bg-secondary); font-weight: 600; }
+        .comparison-table a { color: var(--link-color); text-decoration: none; }
+        .skills-section { padding: 40px 0; }
+        .section-title { font-size: 24px; font-weight: 600; margin-bottom: 24px; }
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 20px; }
+        .skill-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 20px; transition: all 0.2s; }
+        .skill-card:hover { border-color: var(--accent-color); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); }
+        .skill-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
+        .skill-name { font-size: 18px; font-weight: 600; color: var(--link-color); text-decoration: none; }
+        .skill-name:hover { text-decoration: underline; }
+        .skill-badge { font-size: 11px; padding: 4px 8px; border-radius: 12px; background: var(--accent-color); color: white; font-weight: 500; }
+        .skill-badge.official { background: #8b5cf6; }
+        .skill-description { color: var(--text-secondary); font-size: 14px; margin-bottom: 16px; line-height: 1.5; }
+        .skill-meta { font-size: 13px; color: var(--text-muted); }
+        .install-cmd { background: var(--bg-secondary); padding: 8px 12px; border-radius: 6px; font-family: monospace; font-size: 12px; margin-top: 12px; }
+        .faq-section { padding: 40px 0; background: var(--bg-secondary); }
+        .faq-section h2 { font-size: 24px; margin-bottom: 24px; }
+        .faq-item { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; margin-bottom: 12px; }
+        .faq-question { padding: 16px 20px; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; }
+        .faq-question:hover { background: var(--bg-secondary); }
+        .faq-answer { padding: 0 20px 16px; color: var(--text-secondary); display: none; }
+        .faq-item.open .faq-answer { display: block; }
+        footer { background: var(--bg-secondary); border-top: 1px solid var(--border-color); padding: 40px 0; text-align: center; }
+        .footer-links { display: flex; justify-content: center; gap: 32px; margin-bottom: 24px; }
+        .footer-links a { color: var(--text-secondary); text-decoration: none; font-size: 14px; }
+        .footer-text { color: var(--text-muted); font-size: 13px; }
+        @media (max-width: 768px) { .hero h1 { font-size: 28px; } .skills-grid { grid-template-columns: 1fr; } nav { display: none; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="/" class="logo"><span class="logo-icon">⚡</span><span class="logo-text">Awesome Claude Code Skills</span></a>
+            <nav>
+                <a href="/">All Skills</a>
+                <a href="/productivity.html">Productivity</a>
+                <a href="/coding.html">Coding</a>
+                <a href="/research.html">Research</a>
+                <a href="/automation.html" class="active">Automation</a>
+                <a href="/integration.html">Integration</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <nav class="breadcrumb"><a href="/">Home</a> / <span>Automation Skills</span></nav>
+                <h1><span class="accent">Automation</span> Skills</h1>
+                <p class="hero-description">Browser automation, multi-agent orchestration, testing workflows, asset generation, and CI/CD integration to automate repetitive tasks with Claude Code.</p>
+            </div>
+        </section>
+
+        <section class="definition-section">
+            <div class="container">
+                <div class="definition-box">
+                    <h2>What are Automation Skills?</h2>
+                    <p><strong>Automation skills</strong> enable Claude Code to control browsers with Playwright, test iOS apps via simulator, orchestrate multiple AI agents in parallel, generate assets automatically, and integrate with CI/CD pipelines. They transform Claude from a coding assistant into an automation platform.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="comparison-section">
+            <div class="container">
+                <h2>Automation Skills Comparison</h2>
+                <table class="comparison-table">
+                    <thead>
+                        <tr><th>Skill</th><th>Automation Type</th><th>Platform</th><th>Best For</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><a href="https://github.com/lackeyjb/playwright-skill">Playwright Skill</a></td><td>Browser</td><td>Web</td><td>E2E testing, scraping</td></tr>
+                        <tr><td><a href="https://github.com/anthropics/skills/tree/main/skills/webapp-testing">Webapp Testing</a></td><td>Browser</td><td>Web</td><td>Local app testing</td></tr>
+                        <tr><td><a href="https://github.com/conorluddy/ios-simulator-skill">iOS Simulator</a></td><td>Mobile</td><td>iOS</td><td>iOS app testing</td></tr>
+                        <tr><td><a href="https://github.com/obra/superpowers/blob/main/skills/dispatching-parallel-agents/SKILL.md">Parallel Agents</a></td><td>Multi-agent</td><td>Any</td><td>Parallel tasks</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <div class="container">
+                <h2 class="section-title">All Automation Skills</h2>
+                <div class="skills-grid">
+                    <!-- Browser Automation -->
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/lackeyjb/playwright-skill" class="skill-name" target="_blank">Playwright Skill</a>
+                            <span class="skill-badge">Popular</span>
+                        </div>
+                        <p class="skill-description">General-purpose browser automation using Playwright for testing, scraping, and UI verification. Navigate pages, fill forms, click buttons, and take screenshots.</p>
+                        <div class="skill-meta">By lackeyjb</div>
+                        <div class="install-cmd">git clone https://github.com/lackeyjb/playwright-skill ~/.claude/skills/</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/anthropics/skills/tree/main/skills/webapp-testing" class="skill-name" target="_blank">Webapp Testing</a>
+                            <span class="skill-badge official">Official</span>
+                        </div>
+                        <p class="skill-description">Test local web applications using Playwright for UI verification, debugging, and capturing screenshots.</p>
+                        <div class="skill-meta">By Anthropic</div>
+                        <div class="install-cmd">/plugin install example-skills@anthropic-agent-skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/conorluddy/ios-simulator-skill" class="skill-name" target="_blank">iOS Simulator Skill</a>
+                        </div>
+                        <p class="skill-description">iOS app building, navigation, and testing through Xcode simulator automation. Test your iOS apps without a physical device.</p>
+                        <div class="skill-meta">By conorluddy</div>
+                        <div class="install-cmd">git clone https://github.com/conorluddy/ios-simulator-skill ~/.claude/skills/</div>
+                    </article>
+
+                    <!-- Multi-Agent -->
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/obra/superpowers/blob/main/skills/dispatching-parallel-agents/SKILL.md" class="skill-name" target="_blank">Dispatching Parallel Agents</a>
+                        </div>
+                        <p class="skill-description">Coordinate multiple simultaneous agents for parallel task execution. Run multiple Claude instances working on different parts of a problem.</p>
+                        <div class="skill-meta">By obra</div>
+                        <div class="install-cmd">/plugin marketplace add obra/superpowers-marketplace</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/obra/superpowers/blob/main/skills/subagent-driven-development/SKILL.md" class="skill-name" target="_blank">Subagent-Driven Development</a>
+                        </div>
+                        <p class="skill-description">Development workflow using multiple sub-agents for complex tasks with code review checkpoints between iterations.</p>
+                        <div class="skill-meta">By obra</div>
+                        <div class="install-cmd">/plugin marketplace add obra/superpowers-marketplace</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/asklokesh/claudeskill-loki-mode" class="skill-name" target="_blank">Loki Mode</a>
+                        </div>
+                        <p class="skill-description">Multi-agent autonomous startup system - orchestrates 37 AI agents across 6 swarms to build, deploy, and operate a complete startup.</p>
+                        <div class="skill-meta">By asklokesh</div>
+                        <div class="install-cmd">git clone https://github.com/asklokesh/claudeskill-loki-mode ~/.claude/skills/</div>
+                    </article>
+
+                    <!-- Security Automation -->
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/jthack/ffuf_claude_skill" class="skill-name" target="_blank">FFUF Web Fuzzing</a>
+                        </div>
+                        <p class="skill-description">Expert guidance for ffuf web fuzzing during penetration testing, including authenticated fuzzing and result analysis.</p>
+                        <div class="skill-meta">By jthack</div>
+                        <div class="install-cmd">git clone https://github.com/jthack/ffuf_claude_skill ~/.claude/skills/</div>
+                    </article>
+
+                    <!-- Asset Generation -->
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/alonw0/web-asset-generator" class="skill-name" target="_blank">Web Asset Generator</a>
+                        </div>
+                        <p class="skill-description">Generate web assets like favicons, app icons, and social media images automatically from source images.</p>
+                        <div class="skill-meta">By alonw0</div>
+                        <div class="install-cmd">git clone https://github.com/alonw0/web-asset-generator ~/.claude/skills/</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator" class="skill-name" target="_blank">Slack GIF Creator</a>
+                            <span class="skill-badge official">Official</span>
+                        </div>
+                        <p class="skill-description">Create animated GIFs optimized for Slack's size constraints. Perfect for team communication and reactions.</p>
+                        <div class="skill-meta">By Anthropic</div>
+                        <div class="install-cmd">/plugin install example-skills@anthropic-agent-skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/anthropics/skills/tree/main/skills/algorithmic-art" class="skill-name" target="_blank">Algorithmic Art</a>
+                            <span class="skill-badge official">Official</span>
+                        </div>
+                        <p class="skill-description">Create generative art using p5.js with seeded randomness, flow fields, and particle systems.</p>
+                        <div class="skill-meta">By Anthropic</div>
+                        <div class="install-cmd">/plugin install example-skills@anthropic-agent-skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/anthropics/skills/tree/main/skills/canvas-design" class="skill-name" target="_blank">Canvas Design</a>
+                            <span class="skill-badge official">Official</span>
+                        </div>
+                        <p class="skill-description">Design beautiful visual art in .png and .pdf formats using design philosophies.</p>
+                        <div class="skill-meta">By Anthropic</div>
+                        <div class="install-cmd">/plugin install example-skills@anthropic-agent-skills</div>
+                    </article>
+
+                    <!-- Git/DevOps -->
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/ComposioHQ/awesome-claude-skills/tree/master/changelog-generator" class="skill-name" target="_blank">Changelog Generator</a>
+                        </div>
+                        <p class="skill-description">Transform git commits into professional, customer-friendly release notes automatically.</p>
+                        <div class="skill-meta">By ComposioHQ</div>
+                        <div class="install-cmd">git clone https://github.com/ComposioHQ/awesome-claude-skills ~/.claude/skills/</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/obra/superpowers/blob/main/skills/using-git-worktrees/" class="skill-name" target="_blank">Git Worktrees</a>
+                        </div>
+                        <p class="skill-description">Creates isolated git worktrees with smart directory selection and safety verification for parallel development.</p>
+                        <div class="skill-meta">By obra</div>
+                        <div class="install-cmd">/plugin marketplace add obra/superpowers-marketplace</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/obra/superpowers/tree/main/skills/finishing-a-development-branch" class="skill-name" target="_blank">Finishing Dev Branch</a>
+                        </div>
+                        <p class="skill-description">Guides completion of development work by presenting clear options and handling chosen workflow.</p>
+                        <div class="skill-meta">By obra</div>
+                        <div class="install-cmd">/plugin marketplace add obra/superpowers-marketplace</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/sanjay3290/ai-skills/tree/main/skills/jules" class="skill-name" target="_blank">Jules Integration</a>
+                        </div>
+                        <p class="skill-description">Delegate coding tasks to Google Jules AI agent for async bug fixes, documentation, tests, and feature implementation.</p>
+                        <div class="skill-meta">By sanjay3290</div>
+                        <div class="install-cmd">git clone https://github.com/sanjay3290/ai-skills ~/.claude/skills/</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-item open">
+                    <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">What are Claude Code automation skills? <span>▼</span></div>
+                    <div class="faq-answer">Automation skills enable Claude Code to control browsers with Playwright, test iOS apps, orchestrate multiple AI agents in parallel, generate assets automatically, and integrate with CI/CD pipelines.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">How does Playwright skill work with Claude Code? <span>▼</span></div>
+                    <div class="faq-answer">The Playwright skill teaches Claude Code to automate web browsers for testing, scraping, and UI verification. It can navigate pages, fill forms, click buttons, take screenshots, and validate page content programmatically.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">Can Claude Code run multiple agents in parallel? <span>▼</span></div>
+                    <div class="faq-answer">Yes! The Dispatching Parallel Agents skill from Superpowers enables coordinating multiple simultaneous agents for parallel task execution. This is useful for large refactoring tasks, running tests across different configurations, or processing multiple files simultaneously.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="/">All Skills</a>
+                <a href="/productivity.html">Productivity</a>
+                <a href="/coding.html">Coding</a>
+                <a href="/research.html">Research</a>
+                <a href="/automation.html">Automation</a>
+                <a href="/integration.html">Integration</a>
+                <a href="/submit.html">Submit Skill</a>
+            </div>
+            <p class="footer-text">Made with ❤️ by the Claude Code community.</p>
+        </div>
+    </footer>
+
+    <script>
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
+</body>
+</html>

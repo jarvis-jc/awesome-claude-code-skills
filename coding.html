@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Coding Skills for Claude Code | Development, Testing & Security Skills</title>
+    <meta name="title" content="Coding Skills for Claude Code | Development, Testing & Security Skills">
+    <meta name="description" content="25+ coding skills for Claude Code: React best practices, TDD, security analysis with CodeQL/Semgrep, Terraform, AWS CDK, SwiftUI, and framework-specific development patterns.">
+    <meta name="keywords" content="Claude Code coding skills, React skills, TDD, security skills, CodeQL, Semgrep, Terraform, AWS CDK, SwiftUI, frontend design">
+    <meta name="author" content="Awesome Claude Code Skills Community">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://awesome-claude-code-skills.com/coding.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://awesome-claude-code-skills.com/coding.html">
+    <meta property="og:title" content="Coding Skills for Claude Code | Development & Security Skills">
+    <meta property="og:description" content="25+ coding skills: React, TDD, security analysis, Terraform, AWS CDK, and framework-specific patterns.">
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Coding Skills for Claude Code",
+        "description": "Curated collection of 25+ coding skills including React best practices, TDD, security analysis, infrastructure as code, and mobile development.",
+        "url": "https://awesome-claude-code-skills.com/coding.html",
+        "mainEntity": {
+            "@type": "ItemList",
+            "name": "Coding Skills Directory",
+            "numberOfItems": 25
+        },
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://awesome-claude-code-skills.com/"},
+                {"@type": "ListItem", "position": 2, "name": "Coding Skills", "item": "https://awesome-claude-code-skills.com/coding.html"}
+            ]
+        }
+    }
+    </script>
+    
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What are Claude Code coding skills?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Coding skills teach Claude Code development best practices, testing patterns, security analysis techniques, and framework-specific knowledge. They include skills for React, TDD, security auditing with CodeQL/Semgrep, infrastructure as code with Terraform, and more."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do security skills like Trail of Bits work?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Trail of Bits security skills teach Claude Code to perform static analysis using CodeQL and Semgrep, variant analysis to find similar vulnerabilities, code auditing for smart contracts, and security-focused code review. They include 20+ specialized security skills."
+                }
+            }
+        ]
+    }
+    </script>
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f6f8fa;
+            --bg-card: #ffffff;
+            --text-primary: #1f2328;
+            --text-secondary: #656d76;
+            --text-muted: #8b949e;
+            --border-color: #d0d7de;
+            --accent-color: #10b981;
+            --accent-hover: #059669;
+            --link-color: #0969da;
+            --tag-bg: #ddf4ff;
+            --tag-text: #0969da;
+        }
+        
+        [data-theme="dark"] {
+            --bg-primary: #0d1117;
+            --bg-secondary: #161b22;
+            --bg-card: #21262d;
+            --text-primary: #f0f6fc;
+            --text-secondary: #8b949e;
+            --text-muted: #6e7681;
+            --border-color: #30363d;
+            --accent-color: #34d399;
+            --accent-hover: #10b981;
+            --link-color: #58a6ff;
+            --tag-bg: #388bfd26;
+            --tag-text: #58a6ff;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        header {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+            padding: 16px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content { display: flex; justify-content: space-between; align-items: center; }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--text-primary);
+        }
+        
+        .logo-icon { font-size: 28px; }
+        .logo-text { font-size: 20px; font-weight: 600; }
+        
+        nav { display: flex; gap: 24px; }
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            padding: 8px 12px;
+            border-radius: 6px;
+        }
+        nav a:hover, nav a.active { background: var(--accent-color); color: white; }
+        
+        .hero {
+            padding: 60px 0 40px;
+            background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+        }
+        
+        .hero h1 { font-size: 42px; font-weight: 700; margin-bottom: 16px; }
+        .hero h1 .accent { color: var(--accent-color); }
+        .hero-description { font-size: 18px; color: var(--text-secondary); max-width: 700px; margin-bottom: 24px; }
+        
+        .breadcrumb { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; }
+        .breadcrumb a { color: var(--link-color); text-decoration: none; }
+        
+        .definition-section { padding: 40px 0; border-bottom: 1px solid var(--border-color); }
+        
+        .definition-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+        }
+        
+        .definition-box h2 { font-size: 20px; margin-bottom: 12px; color: var(--accent-color); }
+        .definition-box p { color: var(--text-secondary); line-height: 1.7; }
+        
+        .comparison-section { padding: 40px 0; }
+        .comparison-section h2 { font-size: 24px; margin-bottom: 20px; }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 24px;
+        }
+        
+        .comparison-table th, .comparison-table td {
+            padding: 12px 16px;
+            text-align: left;
+            border: 1px solid var(--border-color);
+        }
+        
+        .comparison-table th { background: var(--bg-secondary); font-weight: 600; }
+        .comparison-table tr:hover { background: var(--bg-secondary); }
+        .comparison-table a { color: var(--link-color); text-decoration: none; }
+        
+        .skills-section { padding: 40px 0; }
+        .section-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+        .section-title { font-size: 24px; font-weight: 600; }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        
+        .skill-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.2s;
+        }
+        
+        .skill-card:hover { border-color: var(--accent-color); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); }
+        .skill-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
+        .skill-name { font-size: 18px; font-weight: 600; color: var(--link-color); text-decoration: none; }
+        .skill-name:hover { text-decoration: underline; }
+        
+        .skill-badge {
+            font-size: 11px;
+            padding: 4px 8px;
+            border-radius: 12px;
+            background: var(--accent-color);
+            color: white;
+            font-weight: 500;
+        }
+        
+        .skill-badge.security { background: #ef4444; }
+        .skill-badge.official { background: #8b5cf6; }
+        
+        .skill-description { color: var(--text-secondary); font-size: 14px; margin-bottom: 16px; line-height: 1.5; }
+        .skill-meta { display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: var(--text-muted); }
+        
+        .install-cmd {
+            background: var(--bg-secondary);
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-family: monospace;
+            font-size: 12px;
+            margin-top: 12px;
+            overflow-x: auto;
+        }
+        
+        .faq-section { padding: 40px 0; background: var(--bg-secondary); }
+        .faq-section h2 { font-size: 24px; margin-bottom: 24px; }
+        
+        .faq-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin-bottom: 12px;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 16px 20px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-question:hover { background: var(--bg-secondary); }
+        .faq-answer { padding: 0 20px 16px; color: var(--text-secondary); display: none; }
+        .faq-item.open .faq-answer { display: block; }
+        
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .footer-links { display: flex; justify-content: center; gap: 32px; margin-bottom: 24px; }
+        .footer-links a { color: var(--text-secondary); text-decoration: none; font-size: 14px; }
+        .footer-text { color: var(--text-muted); font-size: 13px; }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 28px; }
+            .skills-grid { grid-template-columns: 1fr; }
+            nav { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="/" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">Awesome Claude Code Skills</span>
+            </a>
+            <nav>
+                <a href="/">All Skills</a>
+                <a href="/productivity.html">Productivity</a>
+                <a href="/coding.html" class="active">Coding</a>
+                <a href="/research.html">Research</a>
+                <a href="/automation.html">Automation</a>
+                <a href="/integration.html">Integration</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="/">Home</a> / <span>Coding Skills</span>
+                </nav>
+                <h1><span class="accent">Coding</span> Skills</h1>
+                <p class="hero-description">
+                    Development best practices, testing patterns, security analysis, and framework-specific skills 
+                    to write better code with Claude Code.
+                </p>
+            </div>
+        </section>
+
+        <section class="definition-section">
+            <div class="container">
+                <div class="definition-box">
+                    <h2>What are Coding Skills?</h2>
+                    <p>
+                        <strong>Coding skills</strong> teach Claude Code development best practices, testing methodologies, 
+                        security analysis techniques, and framework-specific patterns. They range from official skills like 
+                        Frontend Design to security-focused skills from Trail of Bits, and include framework-specific skills 
+                        for React, SwiftUI, Terraform, and more.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="comparison-section">
+            <div class="container">
+                <h2>Security Skills Comparison</h2>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Skill</th>
+                            <th>Analysis Type</th>
+                            <th>Tools Used</th>
+                            <th>Best For</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="https://github.com/trailofbits/skills/tree/main/plugins/static-analysis">Static Analysis</a></td>
+                            <td>Code scanning</td>
+                            <td>CodeQL, Semgrep, SARIF</td>
+                            <td>Finding vulnerabilities</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://github.com/trailofbits/skills/tree/main/plugins/variant-analysis">Variant Analysis</a></td>
+                            <td>Pattern matching</td>
+                            <td>CodeQL patterns</td>
+                            <td>Finding similar bugs</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://github.com/trailofbits/skills/tree/main/plugins/building-secure-contracts">Secure Contracts</a></td>
+                            <td>Smart contracts</td>
+                            <td>Slither, Echidna</td>
+                            <td>Blockchain security</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://github.com/trailofbits/skills/tree/main/plugins/differential-review">Diff Review</a></td>
+                            <td>Code review</td>
+                            <td>Git history</td>
+                            <td>PR security review</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>Framework Skills Comparison</h2>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Skill</th>
+                            <th>Framework</th>
+                            <th>Focus Areas</th>
+                            <th>Author</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices">React Best Practices</a></td>
+                            <td>React</td>
+                            <td>Patterns, hooks, performance</td>
+                            <td>Vercel Labs</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://github.com/callstackincubator/agent-skills">React Native</a></td>
+                            <td>React Native</td>
+                            <td>Mobile performance</td>
+                            <td>Callstack</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://github.com/AvdLee/SwiftUI-Agent-Skill">SwiftUI Expert</a></td>
+                            <td>SwiftUI</td>
+                            <td>iOS 26+, Liquid Glass</td>
+                            <td>AvdLee</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://github.com/antonbabenko/terraform-skill">Terraform</a></td>
+                            <td>Terraform</td>
+                            <td>IaC best practices</td>
+                            <td>antonbabenko</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">All Coding Skills</h2>
+                </div>
+                <div class="skills-grid">
+                    <!-- Official Skills -->
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/anthropics/skills/blob/main/skills/frontend-design" class="skill-name" target="_blank">Frontend Design</a>
+                            <span class="skill-badge official">Official</span>
+                        </div>
+                        <p class="skill-description">Instructs Claude to avoid "AI slop" or generic aesthetics and make bold design decisions. Works very well for React & Tailwind.</p>
+                        <div class="skill-meta"><span>By Anthropic</span></div>
+                        <div class="install-cmd">/plugin install example-skills@anthropic-agent-skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/anthropics/skills/tree/main/skills/mcp-builder" class="skill-name" target="_blank">MCP Builder</a>
+                            <span class="skill-badge official">Official</span>
+                        </div>
+                        <p class="skill-description">Guide for creating high-quality MCP servers to integrate external APIs and services with Claude.</p>
+                        <div class="skill-meta"><span>By Anthropic</span></div>
+                        <div class="install-cmd">/plugin install example-skills@anthropic-agent-skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder" class="skill-name" target="_blank">Web Artifacts Builder</a>
+                            <span class="skill-badge official">Official</span>
+                        </div>
+                        <p class="skill-description">Build complex claude.ai HTML artifacts using React, Tailwind CSS, and shadcn/ui components.</p>
+                        <div class="skill-meta"><span>By Anthropic</span></div>
+                        <div class="install-cmd">/plugin install example-skills@anthropic-agent-skills</div>
+                    </article>
+
+                    <!-- Security Skills -->
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/trailofbits/skills" class="skill-name" target="_blank">Trail of Bits Security</a>
+                            <span class="skill-badge security">Security</span>
+                        </div>
+                        <p class="skill-description">20+ security skills for static analysis with CodeQL/Semgrep, variant analysis, code auditing, and vulnerability detection.</p>
+                        <div class="skill-meta"><span>By Trail of Bits</span></div>
+                        <div class="install-cmd">/plugin marketplace add trailofbits/skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/trailofbits/skills/tree/main/plugins/static-analysis" class="skill-name" target="_blank">Static Analysis</a>
+                            <span class="skill-badge security">Security</span>
+                        </div>
+                        <p class="skill-description">Static analysis toolkit with CodeQL, Semgrep, and SARIF for finding vulnerabilities in code.</p>
+                        <div class="skill-meta"><span>By Trail of Bits</span></div>
+                        <div class="install-cmd">/plugin marketplace add trailofbits/skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/trailofbits/skills/tree/main/plugins/variant-analysis" class="skill-name" target="_blank">Variant Analysis</a>
+                            <span class="skill-badge security">Security</span>
+                        </div>
+                        <p class="skill-description">Find similar vulnerabilities via pattern-based analysis across codebases.</p>
+                        <div class="skill-meta"><span>By Trail of Bits</span></div>
+                        <div class="install-cmd">/plugin marketplace add trailofbits/skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/trailofbits/skills/tree/main/plugins/building-secure-contracts" class="skill-name" target="_blank">Secure Contracts</a>
+                            <span class="skill-badge security">Security</span>
+                        </div>
+                        <p class="skill-description">Smart contract security toolkit with vulnerability scanners for 6 blockchains.</p>
+                        <div class="skill-meta"><span>By Trail of Bits</span></div>
+                        <div class="install-cmd">/plugin marketplace add trailofbits/skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/trailofbits/skills/tree/main/plugins/semgrep-rule-creator" class="skill-name" target="_blank">Semgrep Rule Creator</a>
+                            <span class="skill-badge security">Security</span>
+                        </div>
+                        <p class="skill-description">Create and refine Semgrep rules for vulnerability detection.</p>
+                        <div class="skill-meta"><span>By Trail of Bits</span></div>
+                        <div class="install-cmd">/plugin marketplace add trailofbits/skills</div>
+                    </article>
+
+                    <!-- Testing Skills -->
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/obra/superpowers/blob/main/skills/test-driven-development/SKILL.md" class="skill-name" target="_blank">Test-Driven Development</a>
+                        </div>
+                        <p class="skill-description">Write tests before implementing code with TDD best practices and workflow guidance.</p>
+                        <div class="skill-meta"><span>By obra</span></div>
+                        <div class="install-cmd">/plugin marketplace add obra/superpowers-marketplace</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/obra/superpowers/blob/main/skills/systematic-debugging/SKILL.md" class="skill-name" target="_blank">Systematic Debugging</a>
+                        </div>
+                        <p class="skill-description">Methodical problem-solving in code with structured debugging workflows and root cause analysis.</p>
+                        <div class="skill-meta"><span>By obra</span></div>
+                        <div class="install-cmd">/plugin marketplace add obra/superpowers-marketplace</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/obra/superpowers/blob/main/skills/root-cause-tracing/SKILL.md" class="skill-name" target="_blank">Root Cause Tracing</a>
+                        </div>
+                        <p class="skill-description">Investigate and identify fundamental problems in code with systematic tracing techniques.</p>
+                        <div class="skill-meta"><span>By obra</span></div>
+                        <div class="install-cmd">/plugin marketplace add obra/superpowers-marketplace</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/omkamal/pypict-claude-skill" class="skill-name" target="_blank">PyPICT Testing</a>
+                        </div>
+                        <p class="skill-description">Design comprehensive test cases using PICT (Pairwise Independent Combinatorial Testing) for optimized test suites.</p>
+                        <div class="skill-meta"><span>By omkamal</span></div>
+                        <div class="install-cmd">git clone https://github.com/omkamal/pypict-claude-skill ~/.claude/skills/</div>
+                    </article>
+
+                    <!-- Framework Skills -->
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices" class="skill-name" target="_blank">React Best Practices</a>
+                        </div>
+                        <p class="skill-description">React best practices and patterns from the Vercel engineering team.</p>
+                        <div class="skill-meta"><span>By Vercel Labs</span></div>
+                        <div class="install-cmd">/plugin marketplace add vercel-labs/agent-skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/vercel-labs/agent-skills/tree/main/skills/web-design-guidelines" class="skill-name" target="_blank">Web Design Guidelines</a>
+                        </div>
+                        <p class="skill-description">Web design guidelines and standards from Vercel's engineering team.</p>
+                        <div class="skill-meta"><span>By Vercel Labs</span></div>
+                        <div class="install-cmd">/plugin marketplace add vercel-labs/agent-skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/callstackincubator/agent-skills" class="skill-name" target="_blank">React Native Best Practices</a>
+                        </div>
+                        <p class="skill-description">Performance optimization for React Native apps from Callstack.</p>
+                        <div class="skill-meta"><span>By Callstack</span></div>
+                        <div class="install-cmd">/plugin marketplace add callstackincubator/agent-skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/AvdLee/SwiftUI-Agent-Skill" class="skill-name" target="_blank">SwiftUI Expert</a>
+                        </div>
+                        <p class="skill-description">Modern SwiftUI best practices and iOS 26+ Liquid Glass adoption guidance.</p>
+                        <div class="skill-meta"><span>By AvdLee</span></div>
+                        <div class="install-cmd">git clone https://github.com/AvdLee/SwiftUI-Agent-Skill ~/.claude/skills/</div>
+                    </article>
+
+                    <!-- Infrastructure Skills -->
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/antonbabenko/terraform-skill" class="skill-name" target="_blank">Terraform Skill</a>
+                        </div>
+                        <p class="skill-description">Terraform infrastructure as code best practices for AWS, GCP, and Azure.</p>
+                        <div class="skill-meta"><span>By antonbabenko</span></div>
+                        <div class="install-cmd">git clone https://github.com/antonbabenko/terraform-skill ~/.claude/skills/</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/zxkane/aws-skills" class="skill-name" target="_blank">AWS Skills</a>
+                        </div>
+                        <p class="skill-description">AWS development with CDK best practices, cost optimization, and serverless/event-driven architecture patterns.</p>
+                        <div class="skill-meta"><span>By zxkane</span></div>
+                        <div class="install-cmd">git clone https://github.com/zxkane/aws-skills ~/.claude/skills/</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/supabase/agent-skills/tree/main/skills/supabase-postgres-best-practices" class="skill-name" target="_blank">Postgres Best Practices</a>
+                        </div>
+                        <p class="skill-description">PostgreSQL best practices for Supabase including schema design, RLS, and performance optimization.</p>
+                        <div class="skill-meta"><span>By Supabase</span></div>
+                        <div class="install-cmd">/plugin marketplace add supabase/agent-skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/trailofbits/skills/tree/main/plugins/modern-python" class="skill-name" target="_blank">Modern Python</a>
+                        </div>
+                        <p class="skill-description">Modern Python tooling with uv, ruff, ty, and pytest best practices.</p>
+                        <div class="skill-meta"><span>By Trail of Bits</span></div>
+                        <div class="install-cmd">/plugin marketplace add trailofbits/skills</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/ZhangHanDong/makepad-skills" class="skill-name" target="_blank">Makepad Skills</a>
+                        </div>
+                        <p class="skill-description">Makepad UI development skills for Rust apps: setup, patterns, shaders, packaging.</p>
+                        <div class="skill-meta"><span>By ZhangHanDong</span></div>
+                        <div class="install-cmd">git clone https://github.com/ZhangHanDong/makepad-skills ~/.claude/skills/</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/CloudAI-X/threejs-skills" class="skill-name" target="_blank">Three.js Skills</a>
+                        </div>
+                        <p class="skill-description">Three.js skills for creating 3D elements and interactive experiences.</p>
+                        <div class="skill-meta"><span>By CloudAI-X</span></div>
+                        <div class="install-cmd">git clone https://github.com/CloudAI-X/threejs-skills ~/.claude/skills/</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/1NickPappas/move-code-quality-skill" class="skill-name" target="_blank">Move Code Quality</a>
+                        </div>
+                        <p class="skill-description">Analyzes Move language packages against official Move Book Code Quality Checklist.</p>
+                        <div class="skill-meta"><span>By 1NickPappas</span></div>
+                        <div class="install-cmd">git clone https://github.com/1NickPappas/move-code-quality-skill ~/.claude/skills/</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/ddd/skills/software-architecture" class="skill-name" target="_blank">Software Architecture</a>
+                        </div>
+                        <p class="skill-description">Clean Architecture, SOLID principles, and comprehensive software design best practices.</p>
+                        <div class="skill-meta"><span>By NeoLabHQ</span></div>
+                        <div class="install-cmd">git clone https://github.com/NeoLabHQ/context-engineering-kit ~/.claude/skills/</div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <a href="https://github.com/google-labs-code/stitch-skills/tree/main/skills/react-components" class="skill-name" target="_blank">Stitch React Components</a>
+                        </div>
+                        <p class="skill-description">Stitch to React components conversion from Google Labs.</p>
+                        <div class="skill-meta"><span>By Google Labs</span></div>
+                        <div class="install-cmd">/plugin marketplace add google-labs-code/stitch-skills</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-item open">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        What are Claude Code coding skills?
+                        <span>▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Coding skills teach Claude Code development best practices, testing patterns, security analysis techniques, and framework-specific knowledge. They include skills for React, TDD, security auditing with CodeQL/Semgrep, infrastructure as code with Terraform, and more.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        How do Trail of Bits security skills work?
+                        <span>▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Trail of Bits security skills teach Claude Code to perform static analysis using CodeQL and Semgrep, variant analysis to find similar vulnerabilities, code auditing for smart contracts, and security-focused code review. They include 20+ specialized security skills for different security use cases.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Which coding skill should I start with?
+                        <span>▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        For general development, start with Frontend Design (official) for UI work, or React Best Practices (Vercel) for React apps. For testing, TDD from Superpowers is excellent. For security auditing, Trail of Bits' Static Analysis skill covers most needs.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Can I use multiple coding skills together?
+                        <span>▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! Skills are designed to work together. You can have React Best Practices, TDD, and Security skills all active. Claude Code uses progressive disclosure to load only relevant skills for each task, keeping context efficient.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="/">All Skills</a>
+                <a href="/productivity.html">Productivity</a>
+                <a href="/coding.html">Coding</a>
+                <a href="/research.html">Research</a>
+                <a href="/automation.html">Automation</a>
+                <a href="/integration.html">Integration</a>
+                <a href="/submit.html">Submit Skill</a>
+            </div>
+            <p class="footer-text">Made with ❤️ by the Claude Code community.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleFaq(element) {
+            element.parentElement.classList.toggle('open');
+        }
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
+</body>
+</html>

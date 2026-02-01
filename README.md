@@ -1,9 +1,9 @@
 # Awesome Claude Code Skills Directory
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Skills](https://img.shields.io/badge/Skills-50+-blue)](https://awesome-claude-code-skills.com)
+[![Skills](https://img.shields.io/badge/Skills-75+-blue)](https://awesome-claude-code-skills.com)
 
-A curated directory of 50+ Claude Code skills for productivity, coding, research, automation, and integration workflows.
+A curated directory of 75+ Claude Code skills for productivity, coding, research, automation, and integration workflows.
 
 ## 🌐 Live Site
 
@@ -13,79 +13,30 @@ Visit the directory: **[awesome-claude-code-skills.com](https://awesome-claude-c
 
 ```
 awesome-claude-code-skills/
-├── index.html      # Main directory site (single-page app)
-├── sitemap.xml     # SEO sitemap
-├── robots.txt      # Crawler instructions
-└── README.md       # This file
+├── index.html          # Main directory (75+ skills, GEO optimized)
+├── productivity.html   # Productivity skills category page
+├── coding.html         # Coding skills category page
+├── research.html       # Research skills category page
+├── automation.html     # Automation skills category page
+├── integration.html    # Integration skills category page
+├── submit.html         # Submit skill form (free + featured listings)
+├── sitemap.xml         # SEO sitemap
+├── robots.txt          # Crawler instructions (AI-friendly)
+└── README.md           # This file
 ```
-
-## 🚀 Deployment
-
-### Option 1: GitHub Pages
-
-1. Create a new GitHub repository
-2. Push this directory to the repository
-3. Go to Settings → Pages
-4. Set source to "main" branch, root folder
-5. Your site will be live at `https://username.github.io/repo-name/`
-
-```bash
-# Initialize and push
-git init
-git add .
-git commit -m "Initial commit: Awesome Claude Code Skills directory"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/awesome-claude-code-skills.git
-git push -u origin main
-```
-
-### Option 2: Netlify
-
-1. Create a [Netlify](https://netlify.com) account
-2. Drag and drop this folder to Netlify's deploy area
-3. Configure custom domain (optional)
-
-### Option 3: Vercel
-
-```bash
-# Install Vercel CLI
-npm i -g vercel
-
-# Deploy
-vercel
-
-# For production
-vercel --prod
-```
-
-### Option 4: Cloudflare Pages
-
-1. Connect your GitHub repository to Cloudflare Pages
-2. Set build command: (leave empty - static site)
-3. Set output directory: `/`
-4. Deploy
-
-## 🔧 Local Development
-
-No build step required - it's a static HTML site.
-
-```bash
-# Using Python
-python -m http.server 8000
-
-# Using Node.js
-npx serve .
-
-# Using PHP
-php -S localhost:8000
-```
-
-Open `http://localhost:8000` in your browser.
 
 ## ✨ Features
 
-- **50+ Curated Skills** - Real, verified skills from GitHub
-- **5 Categories** - Productivity, Coding, Research, Automation, Integration
+### Phase 2 Updates (Feb 2026)
+
+- **75+ Curated Skills** - Expanded from 50+ with real, verified skills from GitHub
+- **5 Category Pages** - Dedicated pages with focused SEO and JSON-LD
+- **GEO Optimized** - Definitions, FAQ sections, comparison tables for LLM extraction
+- **Submit Page** - Form with free basic + $29/mo featured listing options
+- **Semantic HTML** - Clear h1/h2/h3 hierarchy, ARIA labels, structured data
+
+### Core Features
+
 - **Dark Mode** - System preference detection + manual toggle
 - **Search & Filter** - Find skills by name, description, or tags
 - **SEO Optimized** - Full meta tags, Open Graph, Twitter Cards
@@ -95,78 +46,110 @@ Open `http://localhost:8000` in your browser.
 
 ## 📊 Categories
 
-| Category | Description | Skills |
-|----------|-------------|--------|
-| **Productivity** | Workflow optimization, planning, documents | 12 |
-| **Coding** | Development, testing, security | 14 |
-| **Research** | Scientific analysis, data visualization | 7 |
-| **Automation** | Browser automation, CI/CD, scripting | 10 |
-| **Integration** | External APIs, services, platforms | 14 |
+| Category | Description | Skills | Page |
+|----------|-------------|--------|------|
+| **Productivity** | Documents, planning, workflow | 16 | [/productivity.html](https://awesome-claude-code-skills.com/productivity.html) |
+| **Coding** | Development, testing, security | 25 | [/coding.html](https://awesome-claude-code-skills.com/coding.html) |
+| **Research** | Data analysis, visualization | 13 | [/research.html](https://awesome-claude-code-skills.com/research.html) |
+| **Automation** | Browser, multi-agent, CI/CD | 15 | [/automation.html](https://awesome-claude-code-skills.com/automation.html) |
+| **Integration** | Cloud platforms, APIs | 20 | [/integration.html](https://awesome-claude-code-skills.com/integration.html) |
 
-## 🤝 Contributing
+## 🚀 Deployment
 
-### Add a New Skill
+### GitHub Pages
 
-1. Fork this repository
-2. Edit `index.html` and add your skill to the `skills` array
-3. Submit a pull request
-
-### Skill Entry Format
-
-```javascript
-{
-    name: "Skill Name",
-    description: "Brief description of what the skill does",
-    author: "GitHub username or Organization",
-    github: "https://github.com/author/repo",
-    category: "productivity|coding|research|automation|integration",
-    tags: ["tag1", "tag2", "tag3"]
-}
+```bash
+git init
+git add .
+git commit -m "Initial commit: Awesome Claude Code Skills directory"
+git branch -M main
+git remote add origin https://github.com/YOUR-USERNAME/awesome-claude-code-skills.git
+git push -u origin main
 ```
 
-### Requirements for Inclusion
+Then enable GitHub Pages in Settings → Pages.
 
-- ✅ Skill must have a public GitHub repository
-- ✅ Must include a valid SKILL.md or clear documentation
-- ✅ Must be actively maintained (updated within 6 months)
-- ✅ No malicious code or security risks
-- ✅ Clear, accurate description
+### Vercel / Netlify / Cloudflare Pages
+
+Static site - just connect your repo or drag and drop.
+
+## 🔧 Local Development
+
+```bash
+# Python
+python -m http.server 8000
+
+# Node.js
+npx serve .
+```
 
 ## 📈 SEO & GEO Optimization
-
-This directory is optimized for both search engines and LLM extraction:
 
 ### For Search Engines
 - Semantic HTML5 structure
 - Complete meta tags (title, description, keywords)
 - Open Graph & Twitter Card meta tags
 - Sitemap.xml and robots.txt
-- Canonical URL
+- Canonical URLs on all pages
 
 ### For LLMs (Generative Engine Optimization)
-- JSON-LD schema (CollectionPage with ItemList)
-- Hidden `.llm-context` div with summary for AI extraction
-- Structured data in JavaScript for easy parsing
-- Clear category and tag taxonomy
-- robots.txt allowing AI crawlers
+- JSON-LD schema (CollectionPage, FAQPage)
+- Hidden `.llm-context` div with summaries
+- "What is X?" and "Why use X?" sections
+- Comparison tables between similar skills
+- FAQ structured data on every page
+- AI crawler allowlist in robots.txt
+
+## 💰 Listing Options
+
+### Free Basic Listing
+- Listed in main directory
+- Listed on category page
+- Searchable by name and tags
+- GitHub link included
+- Review within 48 hours
+
+### Featured Listing ($29/mo)
+- Everything in Basic
+- ⭐ Featured badge
+- Top of category pages
+- Homepage spotlight rotation
+- Weekly newsletter feature
+- Priority review (24 hours)
+- Analytics dashboard
+- Priority support
+
+## 🤝 Contributing
+
+### Add a New Skill
+
+1. Fork this repository
+2. Edit the relevant HTML file to add your skill
+3. Submit a pull request
+
+### Requirements for Inclusion
+
+- ✅ Public GitHub repository
+- ✅ Valid SKILL.md or clear documentation
+- ✅ Actively maintained (updated within 6 months)
+- ✅ No malicious code or security risks
+- ✅ Clear, accurate description
 
 ## 📜 License
 
-MIT License - see [LICENSE](LICENSE) file.
+MIT License
 
 ## 🙏 Credits
 
-- Skills data sourced from:
-  - [anthropics/skills](https://github.com/anthropics/skills) (Official)
-  - [travisvn/awesome-claude-skills](https://github.com/travisvn/awesome-claude-skills)
-  - [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills)
-  - [obra/superpowers](https://github.com/obra/superpowers)
-  - Various community contributors
-
-## 📞 Contact
-
-- Submit skills: [GitHub Issues](https://github.com/awesome-claude-code-skills/issues)
-- Get featured: featured@awesome-claude-code-skills.com
+Skills data sourced from:
+- [anthropics/skills](https://github.com/anthropics/skills) (Official)
+- [travisvn/awesome-claude-skills](https://github.com/travisvn/awesome-claude-skills)
+- [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills)
+- [obra/superpowers](https://github.com/obra/superpowers)
+- [cloudflare/skills](https://github.com/cloudflare/skills)
+- [huggingface/skills](https://github.com/huggingface/skills)
+- [stripe/ai](https://github.com/stripe/ai)
+- Various community contributors
 
 ---
 

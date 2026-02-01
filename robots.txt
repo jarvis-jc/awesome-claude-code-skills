@@ -1,4 +1,4 @@
-# robots.txt for Awesome Claude Code Skills
+# Robots.txt for Awesome Claude Code Skills Directory
 # https://awesome-claude-code-skills.com
 
 User-agent: *
@@ -7,26 +7,20 @@ Allow: /
 # Sitemap location
 Sitemap: https://awesome-claude-code-skills.com/sitemap.xml
 
-# Crawl-delay for polite crawling
-Crawl-delay: 1
-
-# Allow AI/LLM crawlers (GEO optimization)
+# Allow AI crawlers for GEO (Generative Engine Optimization)
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
-User-agent: Claude-Web
-Allow: /
-
-User-agent: Anthropic-AI
-Allow: /
-
 User-agent: Google-Extended
 Allow: /
 
-User-agent: Bingbot
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
 Allow: /
 
 User-agent: CCBot
@@ -35,12 +29,5 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-# Block common bad bots
-User-agent: AhrefsBot
-Disallow: /
-
-User-agent: SemrushBot
-Disallow: /
-
-User-agent: MJ12bot
-Disallow: /
+User-agent: YouBot
+Allow: /

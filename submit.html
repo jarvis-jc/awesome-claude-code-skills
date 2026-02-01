@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Submit Your Claude Code Skill | Get Listed in the Directory</title>
+    <meta name="description" content="Submit your Claude Code skill to the largest curated directory. Free basic listing or $29/mo featured placement for maximum visibility.">
+    <meta name="keywords" content="submit Claude skill, Claude Code directory, skill listing, featured skill">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://awesome-claude-code-skills.com/submit.html">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://awesome-claude-code-skills.com/submit.html">
+    <meta property="og:title" content="Submit Your Claude Code Skill | Get Listed">
+    <meta property="og:description" content="Submit your skill to the largest Claude Code directory. Free basic listing or featured placement.">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Submit Your Claude Code Skill",
+        "description": "Submit your Claude Code skill to the curated directory with free and featured listing options.",
+        "url": "https://awesome-claude-code-skills.com/submit.html",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://awesome-claude-code-skills.com/"},
+                {"@type": "ListItem", "position": 2, "name": "Submit Skill", "item": "https://awesome-claude-code-skills.com/submit.html"}
+            ]
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How do I submit my Claude Code skill?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Fill out the submission form with your skill name, description, GitHub URL, category, and contact email. Basic listings are free and reviewed within 48 hours. Featured listings ($29/mo) get priority review and prominent placement."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the requirements for skill submission?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Skills must have a public GitHub repository, include a valid SKILL.md file, be actively maintained (updated within 6 months), contain no malicious code, and have a clear description of functionality."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is a featured listing?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Featured listings ($29/month) appear at the top of category pages, in homepage spotlights, weekly newsletter features, get a 'Featured' badge, priority support, and detailed analytics on views and installs."
+                }
+            }
+        ]
+    }
+    </script>
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📝</text></svg>">
+    
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f6f8fa;
+            --bg-card: #ffffff;
+            --text-primary: #1f2328;
+            --text-secondary: #656d76;
+            --text-muted: #8b949e;
+            --border-color: #d0d7de;
+            --accent-color: #d97706;
+            --accent-hover: #b45309;
+            --link-color: #0969da;
+            --success-color: #10b981;
+            --featured-color: #8b5cf6;
+        }
+        [data-theme="dark"] {
+            --bg-primary: #0d1117;
+            --bg-secondary: #161b22;
+            --bg-card: #21262d;
+            --text-primary: #f0f6fc;
+            --text-secondary: #8b949e;
+            --text-muted: #6e7681;
+            --border-color: #30363d;
+            --accent-color: #f59e0b;
+            --accent-hover: #d97706;
+            --link-color: #58a6ff;
+            --success-color: #34d399;
+            --featured-color: #a78bfa;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg-primary); color: var(--text-primary); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header { background: var(--bg-secondary); border-bottom: 1px solid var(--border-color); padding: 16px 0; position: sticky; top: 0; z-index: 100; }
+        .header-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--text-primary); }
+        .logo-icon { font-size: 28px; }
+        .logo-text { font-size: 20px; font-weight: 600; }
+        nav { display: flex; gap: 24px; }
+        nav a { color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 8px 12px; border-radius: 6px; }
+        nav a:hover, nav a.active { background: var(--accent-color); color: white; }
+        
+        .hero { padding: 60px 0 40px; background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%); text-align: center; }
+        .hero h1 { font-size: 42px; font-weight: 700; margin-bottom: 16px; }
+        .hero h1 .accent { color: var(--accent-color); }
+        .hero-description { font-size: 18px; color: var(--text-secondary); max-width: 600px; margin: 0 auto 24px; }
+        .breadcrumb { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; }
+        .breadcrumb a { color: var(--link-color); text-decoration: none; }
+        
+        /* Pricing Section */
+        .pricing-section { padding: 60px 0; }
+        .pricing-section h2 { font-size: 28px; text-align: center; margin-bottom: 40px; }
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; max-width: 800px; margin: 0 auto; }
+        
+        .pricing-card {
+            background: var(--bg-card);
+            border: 2px solid var(--border-color);
+            border-radius: 16px;
+            padding: 32px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .pricing-card.featured {
+            border-color: var(--featured-color);
+            transform: scale(1.02);
+        }
+        
+        .pricing-card.featured::before {
+            content: "MOST POPULAR";
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--featured-color);
+            color: white;
+            padding: 4px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .pricing-title { font-size: 24px; font-weight: 600; margin-bottom: 8px; }
+        .pricing-price { font-size: 48px; font-weight: 700; color: var(--accent-color); }
+        .pricing-price span { font-size: 18px; color: var(--text-muted); font-weight: 400; }
+        .pricing-description { color: var(--text-secondary); margin: 16px 0 24px; }
+        
+        .pricing-features { list-style: none; text-align: left; margin-bottom: 24px; }
+        .pricing-features li { padding: 8px 0; display: flex; align-items: center; gap: 12px; }
+        .pricing-features li::before { content: "✓"; color: var(--success-color); font-weight: bold; }
+        
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s;
+        }
+        
+        .btn-primary { background: var(--accent-color); color: white; }
+        .btn-primary:hover { background: var(--accent-hover); }
+        .btn-featured { background: var(--featured-color); color: white; }
+        .btn-featured:hover { background: #7c3aed; }
+        .btn-secondary { background: var(--bg-secondary); color: var(--text-primary); border: 1px solid var(--border-color); }
+        .btn-secondary:hover { background: var(--bg-card); }
+        
+        /* Form Section */
+        .form-section { padding: 60px 0; background: var(--bg-secondary); }
+        .form-section h2 { font-size: 28px; text-align: center; margin-bottom: 40px; }
+        
+        .form-container { max-width: 600px; margin: 0 auto; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px; padding: 40px; }
+        
+        .form-group { margin-bottom: 24px; }
+        .form-group label { display: block; font-weight: 600; margin-bottom: 8px; }
+        .form-group .hint { font-size: 13px; color: var(--text-muted); margin-bottom: 8px; }
+        
+        .form-input,
+        .form-textarea,
+        .form-select {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 16px;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+        }
+        
+        .form-input:focus,
+        .form-textarea:focus,
+        .form-select:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.1);
+        }
+        
+        .form-textarea { min-height: 120px; resize: vertical; }
+        
+        .listing-type {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        
+        .listing-option {
+            flex: 1;
+            padding: 20px;
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .listing-option:hover { border-color: var(--accent-color); }
+        .listing-option.selected { border-color: var(--accent-color); background: rgba(217, 119, 6, 0.05); }
+        .listing-option.featured-option.selected { border-color: var(--featured-color); background: rgba(139, 92, 246, 0.05); }
+        
+        .listing-option input { display: none; }
+        .listing-option-title { font-weight: 600; margin-bottom: 4px; }
+        .listing-option-price { color: var(--accent-color); font-weight: 600; }
+        .listing-option.featured-option .listing-option-price { color: var(--featured-color); }
+        
+        .submit-btn { width: 100%; padding: 16px; font-size: 18px; }
+        
+        /* Requirements */
+        .requirements-section { padding: 60px 0; }
+        .requirements-section h2 { font-size: 28px; text-align: center; margin-bottom: 40px; }
+        
+        .requirements-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; max-width: 900px; margin: 0 auto; }
+        
+        .requirement-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+        }
+        
+        .requirement-icon { font-size: 32px; margin-bottom: 12px; }
+        .requirement-title { font-size: 18px; font-weight: 600; margin-bottom: 8px; }
+        .requirement-description { color: var(--text-secondary); font-size: 14px; }
+        
+        /* FAQ */
+        .faq-section { padding: 60px 0; background: var(--bg-secondary); }
+        .faq-section h2 { font-size: 28px; text-align: center; margin-bottom: 40px; }
+        
+        .faq-container { max-width: 700px; margin: 0 auto; }
+        .faq-item { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; margin-bottom: 12px; }
+        .faq-question { padding: 16px 20px; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; }
+        .faq-question:hover { background: var(--bg-secondary); }
+        .faq-answer { padding: 0 20px 16px; color: var(--text-secondary); display: none; }
+        .faq-item.open .faq-answer { display: block; }
+        
+        footer { background: var(--bg-secondary); border-top: 1px solid var(--border-color); padding: 40px 0; text-align: center; }
+        .footer-links { display: flex; justify-content: center; gap: 32px; margin-bottom: 24px; }
+        .footer-links a { color: var(--text-secondary); text-decoration: none; font-size: 14px; }
+        .footer-text { color: var(--text-muted); font-size: 13px; }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 28px; }
+            .pricing-grid { grid-template-columns: 1fr; }
+            .pricing-card.featured { transform: none; }
+            .listing-type { flex-direction: column; }
+            nav { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="/" class="logo"><span class="logo-icon">⚡</span><span class="logo-text">Awesome Claude Code Skills</span></a>
+            <nav>
+                <a href="/">All Skills</a>
+                <a href="/productivity.html">Productivity</a>
+                <a href="/coding.html">Coding</a>
+                <a href="/research.html">Research</a>
+                <a href="/automation.html">Automation</a>
+                <a href="/integration.html">Integration</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <nav class="breadcrumb"><a href="/">Home</a> / <span>Submit Skill</span></nav>
+                <h1>Submit Your <span class="accent">Skill</span></h1>
+                <p class="hero-description">Get your Claude Code skill listed in the largest curated directory. Reach thousands of developers looking for skills like yours.</p>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section class="pricing-section">
+            <div class="container">
+                <h2>Choose Your Listing Type</h2>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3 class="pricing-title">Basic Listing</h3>
+                        <div class="pricing-price">Free</div>
+                        <p class="pricing-description">Get discovered by the Claude Code community</p>
+                        <ul class="pricing-features">
+                            <li>Listed in main directory</li>
+                            <li>Listed on category page</li>
+                            <li>Searchable by name and tags</li>
+                            <li>GitHub link included</li>
+                            <li>Review within 48 hours</li>
+                        </ul>
+                        <a href="#submit-form" class="btn btn-secondary">Submit Free Listing</a>
+                    </div>
+                    
+                    <div class="pricing-card featured">
+                        <h3 class="pricing-title">Featured Listing</h3>
+                        <div class="pricing-price">$29<span>/month</span></div>
+                        <p class="pricing-description">Maximum visibility for your skill</p>
+                        <ul class="pricing-features">
+                            <li>Everything in Basic</li>
+                            <li>⭐ Featured badge</li>
+                            <li>Top of category pages</li>
+                            <li>Homepage spotlight rotation</li>
+                            <li>Weekly newsletter feature</li>
+                            <li>Priority review (24 hours)</li>
+                            <li>Analytics dashboard</li>
+                            <li>Priority support</li>
+                        </ul>
+                        <a href="#submit-form" class="btn btn-featured">Get Featured</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Submission Form -->
+        <section class="form-section" id="submit-form">
+            <div class="container">
+                <h2>Submit Your Skill</h2>
+                <div class="form-container">
+                    <form action="https://formspree.io/f/your-form-id" method="POST">
+                        <div class="listing-type">
+                            <label class="listing-option selected" onclick="selectListing(this, 'basic')">
+                                <input type="radio" name="listing_type" value="basic" checked>
+                                <div class="listing-option-title">Basic Listing</div>
+                                <div class="listing-option-price">Free</div>
+                            </label>
+                            <label class="listing-option featured-option" onclick="selectListing(this, 'featured')">
+                                <input type="radio" name="listing_type" value="featured">
+                                <div class="listing-option-title">Featured Listing</div>
+                                <div class="listing-option-price">$29/month</div>
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="skill_name">Skill Name *</label>
+                            <p class="hint">The name of your skill as it appears in your SKILL.md</p>
+                            <input type="text" id="skill_name" name="skill_name" class="form-input" required placeholder="e.g., My Awesome Skill">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description">Description *</label>
+                            <p class="hint">A clear, concise description of what your skill does (max 200 characters)</p>
+                            <textarea id="description" name="description" class="form-textarea" required maxlength="200" placeholder="Describe what your skill does and why developers should use it..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="github_url">GitHub URL *</label>
+                            <p class="hint">Link to your skill's GitHub repository</p>
+                            <input type="url" id="github_url" name="github_url" class="form-input" required placeholder="https://github.com/username/skill-name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="category">Category *</label>
+                            <select id="category" name="category" class="form-select" required>
+                                <option value="">Select a category...</option>
+                                <option value="productivity">Productivity</option>
+                                <option value="coding">Coding</option>
+                                <option value="research">Research</option>
+                                <option value="automation">Automation</option>
+                                <option value="integration">Integration</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="install_command">Install Command</label>
+                            <p class="hint">How to install your skill (optional)</p>
+                            <input type="text" id="install_command" name="install_command" class="form-input" placeholder="e.g., /plugin marketplace add username/skill">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tags">Tags</label>
+                            <p class="hint">Comma-separated tags to help users find your skill</p>
+                            <input type="text" id="tags" name="tags" class="form-input" placeholder="e.g., react, testing, automation">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Contact Email *</label>
+                            <p class="hint">We'll notify you when your skill is approved</p>
+                            <input type="email" id="email" name="email" class="form-input" required placeholder="you@example.com">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-btn">Submit Skill for Review</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Requirements -->
+        <section class="requirements-section">
+            <div class="container">
+                <h2>Submission Requirements</h2>
+                <div class="requirements-grid">
+                    <div class="requirement-card">
+                        <div class="requirement-icon">📂</div>
+                        <h3 class="requirement-title">Public GitHub Repository</h3>
+                        <p class="requirement-description">Your skill must be hosted on a public GitHub repository that others can access and clone.</p>
+                    </div>
+                    <div class="requirement-card">
+                        <div class="requirement-icon">📄</div>
+                        <h3 class="requirement-title">Valid SKILL.md</h3>
+                        <p class="requirement-description">Include a SKILL.md file with proper YAML frontmatter (name, description) and clear instructions.</p>
+                    </div>
+                    <div class="requirement-card">
+                        <div class="requirement-icon">🔄</div>
+                        <h3 class="requirement-title">Actively Maintained</h3>
+                        <p class="requirement-description">Your skill should be updated within the last 6 months to ensure compatibility with Claude Code.</p>
+                    </div>
+                    <div class="requirement-card">
+                        <div class="requirement-icon">🔒</div>
+                        <h3 class="requirement-title">No Malicious Code</h3>
+                        <p class="requirement-description">Skills are reviewed for security. No data exfiltration, malware, or harmful code is allowed.</p>
+                    </div>
+                    <div class="requirement-card">
+                        <div class="requirement-icon">📝</div>
+                        <h3 class="requirement-title">Clear Documentation</h3>
+                        <p class="requirement-description">Include installation instructions, usage examples, and any prerequisites in your README.</p>
+                    </div>
+                    <div class="requirement-card">
+                        <div class="requirement-icon">✨</div>
+                        <h3 class="requirement-title">Original Work</h3>
+                        <p class="requirement-description">Submit only skills you created or have permission to list. Give credit to any dependencies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    <div class="faq-item open">
+                        <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                            How long does review take? <span>▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            Basic listings are reviewed within 48 hours. Featured listings get priority review within 24 hours. You'll receive an email notification when your skill is approved or if we need more information.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                            What makes a good skill submission? <span>▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            Good submissions have: clear SKILL.md with proper frontmatter, helpful README documentation, working install commands, relevant tags, and solve a specific problem for Claude Code users. Include examples and use cases.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                            Can I upgrade from Basic to Featured? <span>▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            Yes! You can upgrade your listing at any time. Just submit a new Featured listing request with the same skill name and we'll upgrade your existing listing.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                            What's included in the analytics dashboard? <span>▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            Featured listings get access to view counts, click-through rates, search impressions, and referral sources. You can see how users discover and interact with your skill listing.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                            How do I cancel my Featured listing? <span>▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            Email us at support@awesome-claude-code-skills.com to cancel. Your listing will convert to Basic at the end of your billing period. No partial refunds for unused time.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="/">All Skills</a>
+                <a href="/productivity.html">Productivity</a>
+                <a href="/coding.html">Coding</a>
+                <a href="/research.html">Research</a>
+                <a href="/automation.html">Automation</a>
+                <a href="/integration.html">Integration</a>
+            </div>
+            <p class="footer-text">Made with ❤️ by the Claude Code community.</p>
+        </div>
+    </footer>
+
+    <script>
+        function selectListing(element, type) {
+            document.querySelectorAll('.listing-option').forEach(el => el.classList.remove('selected'));
+            element.classList.add('selected');
+            element.querySelector('input').checked = true;
+        }
+        
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
+</body>
+</html>
