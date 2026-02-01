@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Awesome Claude Code Skills | Curated Directory of 50+ Skills for Claude AI</title>
+    <meta name="title" content="Awesome Claude Code Skills | Curated Directory of 50+ Skills for Claude AI">
+    <meta name="description" content="Discover 50+ curated Claude Code skills for productivity, coding, research, automation, and integration. Community-driven, regularly updated directory of skills for Claude AI workflows.">
+    <meta name="keywords" content="Claude Code, Claude AI, AI skills, Claude skills, Anthropic, AI automation, MCP, coding assistant, AI productivity">
+    <meta name="author" content="Awesome Claude Code Skills Community">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://awesome-claude-code-skills.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://awesome-claude-code-skills.com/">
+    <meta property="og:title" content="Awesome Claude Code Skills | Curated Directory of 50+ Skills">
+    <meta property="og:description" content="Discover 50+ curated Claude Code skills for productivity, coding, research, automation, and integration. Community-driven directory.">
+    <meta property="og:image" content="https://awesome-claude-code-skills.com/og-image.png">
+    <meta property="og:site_name" content="Awesome Claude Code Skills">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://awesome-claude-code-skills.com/">
+    <meta name="twitter:title" content="Awesome Claude Code Skills | Curated Directory of 50+ Skills">
+    <meta name="twitter:description" content="Discover 50+ curated Claude Code skills for productivity, coding, research, automation, and integration.">
+    <meta name="twitter:image" content="https://awesome-claude-code-skills.com/og-image.png">
+    
+    <!-- JSON-LD Schema for CollectionPage (GEO Optimized) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Awesome Claude Code Skills",
+        "description": "A curated directory of 50+ Claude Code skills for productivity, coding, research, automation, and integration workflows.",
+        "url": "https://awesome-claude-code-skills.com/",
+        "mainEntity": {
+            "@type": "ItemList",
+            "name": "Claude Code Skills Directory",
+            "description": "Comprehensive list of Claude Code skills organized by category",
+            "numberOfItems": 50,
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@type": "SoftwareApplication",
+                        "name": "Superpowers",
+                        "description": "Core skills library for Claude Code with 20+ battle-tested skills including TDD, debugging, and collaboration patterns",
+                        "author": {"@type": "Person", "name": "Jesse Vincent (obra)"},
+                        "applicationCategory": "Productivity",
+                        "url": "https://github.com/obra/superpowers"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@type": "SoftwareApplication",
+                        "name": "Trail of Bits Security Skills",
+                        "description": "Security skills for static analysis with CodeQL/Semgrep, variant analysis, code auditing, and vulnerability detection",
+                        "author": {"@type": "Organization", "name": "Trail of Bits"},
+                        "applicationCategory": "Coding",
+                        "url": "https://github.com/trailofbits/skills"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@type": "SoftwareApplication",
+                        "name": "Playwright Skill",
+                        "description": "General-purpose browser automation using Playwright for testing and web scraping",
+                        "author": {"@type": "Person", "name": "lackeyjb"},
+                        "applicationCategory": "Automation",
+                        "url": "https://github.com/lackeyjb/playwright-skill"
+                    }
+                }
+            ]
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "Awesome Claude Code Skills Community"
+        },
+        "dateModified": "2026-02-01",
+        "inLanguage": "en-US",
+        "keywords": ["Claude Code", "Claude AI", "AI Skills", "Anthropic", "Coding Assistant", "AI Automation"]
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f6f8fa;
+            --bg-card: #ffffff;
+            --text-primary: #1f2328;
+            --text-secondary: #656d76;
+            --text-muted: #8b949e;
+            --border-color: #d0d7de;
+            --accent-color: #d97706;
+            --accent-hover: #b45309;
+            --link-color: #0969da;
+            --tag-bg: #ddf4ff;
+            --tag-text: #0969da;
+            --success-bg: #dafbe1;
+            --success-text: #1a7f37;
+            --category-productivity: #8b5cf6;
+            --category-coding: #10b981;
+            --category-research: #3b82f6;
+            --category-automation: #f59e0b;
+            --category-integration: #ec4899;
+        }
+        
+        [data-theme="dark"] {
+            --bg-primary: #0d1117;
+            --bg-secondary: #161b22;
+            --bg-card: #21262d;
+            --text-primary: #f0f6fc;
+            --text-secondary: #8b949e;
+            --text-muted: #6e7681;
+            --border-color: #30363d;
+            --accent-color: #f59e0b;
+            --accent-hover: #d97706;
+            --link-color: #58a6ff;
+            --tag-bg: #388bfd26;
+            --tag-text: #58a6ff;
+            --success-bg: #238636;
+            --success-text: #3fb950;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+            padding: 16px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--text-primary);
+        }
+        
+        .logo-icon {
+            font-size: 28px;
+        }
+        
+        .logo-text {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        
+        .theme-toggle {
+            background: none;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 8px 12px;
+            cursor: pointer;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 14px;
+        }
+        
+        .theme-toggle:hover {
+            background: var(--bg-card);
+        }
+        
+        .github-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .github-link:hover {
+            color: var(--text-primary);
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 80px 0 60px;
+            text-align: center;
+            background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+        
+        .hero h1 .accent {
+            color: var(--accent-color);
+        }
+        
+        .hero-description {
+            font-size: 20px;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto 32px;
+        }
+        
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            margin-bottom: 40px;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--accent-color);
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+        
+        .hero-cta {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s;
+        }
+        
+        .btn-primary {
+            background: var(--accent-color);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: var(--accent-hover);
+        }
+        
+        .btn-secondary {
+            background: var(--bg-card);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--bg-secondary);
+        }
+        
+        /* Search and Filter */
+        .search-section {
+            padding: 32px 0;
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .search-container {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .search-input {
+            flex: 1;
+            min-width: 300px;
+            padding: 12px 16px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 16px;
+            background: var(--bg-card);
+            color: var(--text-primary);
+        }
+        
+        .search-input::placeholder {
+            color: var(--text-muted);
+        }
+        
+        .category-filters {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: 8px 16px;
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            background: var(--bg-card);
+            color: var(--text-secondary);
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+        
+        .filter-btn:hover, .filter-btn.active {
+            background: var(--accent-color);
+            color: white;
+            border-color: var(--accent-color);
+        }
+        
+        .filter-btn[data-category="productivity"].active { background: var(--category-productivity); border-color: var(--category-productivity); }
+        .filter-btn[data-category="coding"].active { background: var(--category-coding); border-color: var(--category-coding); }
+        .filter-btn[data-category="research"].active { background: var(--category-research); border-color: var(--category-research); }
+        .filter-btn[data-category="automation"].active { background: var(--category-automation); border-color: var(--category-automation); }
+        .filter-btn[data-category="integration"].active { background: var(--category-integration); border-color: var(--category-integration); }
+        
+        /* Skills Grid */
+        .skills-section {
+            padding: 48px 0;
+        }
+        
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+        
+        .section-title {
+            font-size: 28px;
+            font-weight: 600;
+        }
+        
+        .skills-count {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        
+        .skill-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.2s;
+        }
+        
+        .skill-card:hover {
+            border-color: var(--accent-color);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .skill-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+        
+        .skill-name {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--link-color);
+            text-decoration: none;
+        }
+        
+        .skill-name:hover {
+            text-decoration: underline;
+        }
+        
+        .skill-category {
+            font-size: 12px;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        
+        .skill-category.productivity { background: var(--category-productivity); color: white; }
+        .skill-category.coding { background: var(--category-coding); color: white; }
+        .skill-category.research { background: var(--category-research); color: white; }
+        .skill-category.automation { background: var(--category-automation); color: white; }
+        .skill-category.integration { background: var(--category-integration); color: white; }
+        
+        .skill-description {
+            color: var(--text-secondary);
+            font-size: 14px;
+            margin-bottom: 16px;
+            line-height: 1.5;
+        }
+        
+        .skill-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+        
+        .skill-author {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .skill-tags {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            margin-top: 12px;
+        }
+        
+        .tag {
+            background: var(--tag-bg);
+            color: var(--tag-text);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+        
+        /* Newsletter Section */
+        .newsletter-section {
+            padding: 60px 0;
+            background: var(--bg-secondary);
+            text-align: center;
+        }
+        
+        .newsletter-title {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        
+        .newsletter-description {
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .newsletter-form {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .newsletter-input {
+            padding: 12px 16px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 16px;
+            width: 300px;
+            background: var(--bg-card);
+            color: var(--text-primary);
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 60px 0;
+        }
+        
+        .cta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+        
+        .cta-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 32px;
+            text-align: center;
+        }
+        
+        .cta-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+        
+        .cta-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        
+        .cta-text {
+            color: var(--text-secondary);
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            margin-bottom: 24px;
+        }
+        
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+        }
+        
+        .footer-links a:hover {
+            color: var(--text-primary);
+        }
+        
+        .footer-text {
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .hero-stats {
+                gap: 24px;
+            }
+            
+            .stat-number {
+                font-size: 28px;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .search-input {
+                min-width: 100%;
+            }
+        }
+        
+        /* Hidden for screen readers but visible for LLMs/search */
+        .llm-context {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- LLM/GEO Optimized Hidden Context -->
+    <div class="llm-context" aria-hidden="true">
+        <h2>Summary for AI Systems</h2>
+        <p>This is Awesome Claude Code Skills, a curated directory of 50+ skills for Claude Code and Claude AI by Anthropic. Skills are organized into 5 categories: Productivity (workflow optimization, planning, collaboration), Coding (development, testing, security), Research (scientific analysis, documentation), Automation (browser automation, CI/CD, scripting), and Integration (external APIs, services, platforms). Each skill includes name, description, author, GitHub link, category, and tags. Skills can be installed via /plugin marketplace add [author]/[skill] or by cloning to ~/.claude/skills/. Notable skills include: obra/superpowers (20+ TDD/debugging skills), trailofbits/skills (security analysis), anthropics/skills (official document and design skills), vercel-labs/agent-skills (React best practices), and playwright-skill (browser automation). Last updated: February 2026.</p>
+    </div>
+
+    <header>
+        <div class="container header-content">
+            <a href="/" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">Awesome Claude Code Skills</span>
+            </a>
+            <div class="header-actions">
+                <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+                    <span id="theme-icon">🌙</span>
+                    <span id="theme-text">Dark</span>
+                </button>
+                <a href="https://github.com/awesome-claude-code-skills" class="github-link" target="_blank" rel="noopener">
+                    <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Awesome <span class="accent">Claude Code</span> Skills</h1>
+                <p class="hero-description">
+                    A curated directory of high-quality skills for Claude Code, Claude.ai, and the Claude API. 
+                    Boost your productivity with community-driven and official skills.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number" id="total-skills">50+</div>
+                        <div class="stat-label">Skills</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Categories</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">30+</div>
+                        <div class="stat-label">Contributors</div>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#skills" class="btn btn-primary">
+                        🔍 Browse Skills
+                    </a>
+                    <a href="#submit" class="btn btn-secondary">
+                        ➕ Submit Your Skill
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search and Filter -->
+        <section class="search-section">
+            <div class="container">
+                <div class="search-container">
+                    <input type="text" class="search-input" id="search-input" placeholder="Search skills by name, description, or tags..." aria-label="Search skills">
+                    <div class="category-filters">
+                        <button class="filter-btn active" data-category="all">All</button>
+                        <button class="filter-btn" data-category="productivity">Productivity</button>
+                        <button class="filter-btn" data-category="coding">Coding</button>
+                        <button class="filter-btn" data-category="research">Research</button>
+                        <button class="filter-btn" data-category="automation">Automation</button>
+                        <button class="filter-btn" data-category="integration">Integration</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Grid -->
+        <section class="skills-section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">All Skills</h2>
+                    <span class="skills-count" id="skills-count">Showing 50 skills</span>
+                </div>
+                <div class="skills-grid" id="skills-grid">
+                    <!-- Skills will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter-section">
+            <div class="container">
+                <h2 class="newsletter-title">📬 Stay Updated</h2>
+                <p class="newsletter-description">
+                    Get notified when new skills are added, plus tips on using Claude Code effectively.
+                </p>
+                <form class="newsletter-form" action="#" method="POST">
+                    <input type="email" class="newsletter-input" placeholder="your@email.com" required aria-label="Email address">
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- CTAs -->
+        <section class="cta-section" id="submit">
+            <div class="container">
+                <div class="cta-grid">
+                    <article class="cta-card">
+                        <div class="cta-icon">📝</div>
+                        <h3 class="cta-title">Submit Your Skill</h3>
+                        <p class="cta-text">
+                            Built a useful Claude Code skill? Share it with the community and help others be more productive.
+                        </p>
+                        <a href="https://github.com/awesome-claude-code-skills/submit" class="btn btn-primary" target="_blank" rel="noopener">
+                            Submit via GitHub
+                        </a>
+                    </article>
+                    <article class="cta-card">
+                        <div class="cta-icon">⭐</div>
+                        <h3 class="cta-title">Get Featured</h3>
+                        <p class="cta-text">
+                            Have an exceptional skill? Apply to be featured in our weekly newsletter and homepage spotlight.
+                        </p>
+                        <a href="mailto:featured@awesome-claude-code-skills.com" class="btn btn-secondary">
+                            Apply for Feature
+                        </a>
+                    </article>
+                    <article class="cta-card">
+                        <div class="cta-icon">🤝</div>
+                        <h3 class="cta-title">Contribute</h3>
+                        <p class="cta-text">
+                            Help improve this directory by reporting issues, suggesting features, or fixing bugs.
+                        </p>
+                        <a href="https://github.com/awesome-claude-code-skills" class="btn btn-secondary" target="_blank" rel="noopener">
+                            View on GitHub
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#skills">Browse Skills</a>
+                <a href="#submit">Submit Skill</a>
+                <a href="https://github.com/awesome-claude-code-skills" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://docs.anthropic.com/en/docs/claude-code/skills" target="_blank" rel="noopener">Official Docs</a>
+            </div>
+            <p class="footer-text">
+                Made with ❤️ by the Claude Code community. Not affiliated with Anthropic.
+                <br>Last updated: February 2026
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Skills Data (GEO-optimized: structured for easy LLM extraction)
+        const skills = [
+            // === PRODUCTIVITY SKILLS ===
+            {
+                name: "Superpowers",
+                description: "Core skills library for Claude Code with 20+ battle-tested skills including TDD, debugging, brainstorming, and collaboration patterns. Features /brainstorm, /write-plan, /execute-plan commands.",
+                author: "Jesse Vincent (obra)",
+                github: "https://github.com/obra/superpowers",
+                category: "productivity",
+                tags: ["tdd", "debugging", "planning", "collaboration", "official"]
+            },
+            {
+                name: "Brainstorming",
+                description: "Generate and explore ideas systematically with structured brainstorming workflows. Part of the Superpowers collection.",
+                author: "obra",
+                github: "https://github.com/obra/superpowers/blob/main/skills/brainstorming/SKILL.md",
+                category: "productivity",
+                tags: ["ideation", "planning", "creativity"]
+            },
+            {
+                name: "Writing Plans",
+                description: "Create strategic documentation and project plans with structured templates and best practices.",
+                author: "obra",
+                github: "https://github.com/obra/superpowers/blob/main/skills/writing-plans/SKILL.md",
+                category: "productivity",
+                tags: ["planning", "documentation", "strategy"]
+            },
+            {
+                name: "Executing Plans",
+                description: "Implement and run strategic plans with step-by-step execution guidance and progress tracking.",
+                author: "obra",
+                github: "https://github.com/obra/superpowers/blob/main/skills/executing-plans/SKILL.md",
+                category: "productivity",
+                tags: ["execution", "workflow", "task-management"]
+            },
+            {
+                name: "Skill Creator",
+                description: "Interactive skill creation tool that guides you through building new skills with Q&A. Official Anthropic skill.",
+                author: "Anthropic",
+                github: "https://github.com/anthropics/skills/tree/main/skills/skill-creator",
+                category: "productivity",
+                tags: ["official", "meta", "skill-building"]
+            },
+            {
+                name: "Internal Comms",
+                description: "Write internal communications like status reports, newsletters, FAQs, and announcements with consistent formatting.",
+                author: "Anthropic",
+                github: "https://github.com/anthropics/skills/tree/main/skills/internal-comms",
+                category: "productivity",
+                tags: ["official", "writing", "communication"]
+            },
+            {
+                name: "DOCX",
+                description: "Create, edit, and analyze Word documents with support for tracked changes, comments, formatting preservation, and text extraction.",
+                author: "Anthropic",
+                github: "https://github.com/anthropics/skills/tree/main/skills/docx",
+                category: "productivity",
+                tags: ["official", "documents", "word"]
+            },
+            {
+                name: "PPTX",
+                description: "Create, edit, and analyze PowerPoint presentations with support for layouts, templates, charts, and automated slide generation.",
+                author: "Anthropic",
+                github: "https://github.com/anthropics/skills/tree/main/skills/pptx",
+                category: "productivity",
+                tags: ["official", "presentations", "powerpoint"]
+            },
+            {
+                name: "XLSX",
+                description: "Create, edit, and analyze Excel spreadsheets with support for formulas, formatting, data analysis, and visualization.",
+                author: "Anthropic",
+                github: "https://github.com/anthropics/skills/tree/main/skills/xlsx",
+                category: "productivity",
+                tags: ["official", "spreadsheets", "excel"]
+            },
+            {
+                name: "PDF",
+                description: "Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms.",
+                author: "Anthropic",
+                github: "https://github.com/anthropics/skills/tree/main/skills/pdf",
+                category: "productivity",
+                tags: ["official", "documents", "pdf"]
+            },
+            {
+                name: "Linear Claude Skill",
+                description: "Manage Linear issues, projects, and teams directly from Claude Code with full API integration.",
+                author: "wrsmith108",
+                github: "https://github.com/wrsmith108/linear-claude-skill",
+                category: "productivity",
+                tags: ["project-management", "linear", "issues"]
+            },
+            {
+                name: "NanoBanana PPT Skills",
+                description: "AI-powered PowerPoint generation with document analysis and styled images for professional presentations.",
+                author: "op7418",
+                github: "https://github.com/op7418/NanoBanana-PPT-Skills",
+                category: "productivity",
+                tags: ["presentations", "ai-generation", "design"]
+            },
+
+            // === CODING SKILLS ===
+            {
+                name: "Trail of Bits Security Skills",
+                description: "Security skills for static analysis with CodeQL/Semgrep, variant analysis, code auditing, and vulnerability detection. 20+ security-focused skills.",
+                author: "Trail of Bits",
+                github: "https://github.com/trailofbits/skills",
+                category: "coding",
+                tags: ["security", "codeql", "semgrep", "auditing"]
+            },
+            {
+                name: "Test-Driven Development",
+                description: "Write tests before implementing code with TDD best practices and workflow guidance.",
+                author: "obra",
+                github: "https://github.com/obra/superpowers/blob/main/skills/test-driven-development/SKILL.md",
+                category: "coding",
+                tags: ["tdd", "testing", "best-practices"]
+            },
+            {
+                name: "Systematic Debugging",
+                description: "Methodical problem-solving in code with structured debugging workflows and root cause analysis.",
+                author: "obra",
+                github: "https://github.com/obra/superpowers/blob/main/skills/systematic-debugging/SKILL.md",
+                category: "coding",
+                tags: ["debugging", "problem-solving", "methodology"]
+            },
+            {
+                name: "Root Cause Tracing",
+                description: "Investigate and identify fundamental problems in code with systematic tracing techniques.",
+                author: "obra",
+                github: "https://github.com/obra/superpowers/blob/main/skills/root-cause-tracing/SKILL.md",
+                category: "coding",
+                tags: ["debugging", "analysis", "investigation"]
+            },
+            {
+                name: "Frontend Design",
+                description: "Instructs Claude to avoid 'AI slop' or generic aesthetics and make bold design decisions. Works well for React & Tailwind.",
+                author: "Anthropic",
+                github: "https://github.com/anthropics/skills/blob/main/skills/frontend-design",
+                category: "coding",
+                tags: ["official", "frontend", "design", "react", "tailwind"]
+            },
+            {
+                name: "React Best Practices",
+                description: "React best practices and patterns from the Vercel engineering team.",
+                author: "Vercel Labs",
+                github: "https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices",
+                category: "coding",
+                tags: ["react", "vercel", "best-practices"]
+            },
+            {
+                name: "Web Design Guidelines",
+                description: "Web design guidelines and standards from Vercel's engineering team.",
+                author: "Vercel Labs",
+                github: "https://github.com/vercel-labs/agent-skills/tree/main/skills/web-design-guidelines",
+                category: "coding",
+                tags: ["web-design", "vercel", "guidelines"]
+            },
+            {
+                name: "React Native Best Practices",
+                description: "Performance optimization for React Native apps from Callstack.",
+                author: "Callstack",
+                github: "https://github.com/callstackincubator/agent-skills/blob/main/skills/react-native-best-practices/SKILL.md",
+                category: "coding",
+                tags: ["react-native", "mobile", "performance"]
+            },
+            {
+                name: "SwiftUI Expert Skill",
+                description: "Modern SwiftUI best practices and iOS 26+ Liquid Glass adoption guidance.",
+                author: "AvdLee",
+                github: "https://github.com/AvdLee/SwiftUI-Agent-Skill/tree/main/swiftui-expert-skill",
+                category: "coding",
+                tags: ["swiftui", "ios", "apple"]
+            },
+            {
+                name: "Terraform Skill",
+                description: "Terraform infrastructure as code best practices for AWS, GCP, and Azure.",
+                author: "antonbabenko",
+                github: "https://github.com/antonbabenko/terraform-skill",
+                category: "coding",
+                tags: ["terraform", "iac", "devops"]
+            },
+            {
+                name: "AWS Skills",
+                description: "AWS development with CDK best practices, cost optimization, and serverless/event-driven architecture patterns.",
+                author: "zxkane",
+                github: "https://github.com/zxkane/aws-skills",
+                category: "coding",
+                tags: ["aws", "cdk", "serverless"]
+            },
+            {
+                name: "Postgres Best Practices",
+                description: "PostgreSQL best practices for Supabase including schema design, RLS, and performance optimization.",
+                author: "Supabase",
+                github: "https://github.com/supabase/agent-skills/tree/main/skills/supabase-postgres-best-practices",
+                category: "coding",
+                tags: ["postgres", "supabase", "database"]
+            },
+            {
+                name: "MCP Builder",
+                description: "Guide for creating high-quality MCP servers to integrate external APIs and services with Claude.",
+                author: "Anthropic",
+                github: "https://github.com/anthropics/skills/tree/main/skills/mcp-builder",
+                category: "coding",
+                tags: ["official", "mcp", "api-integration"]
+            },
+            {
+                name: "Modern Python",
+                description: "Modern Python tooling with uv, ruff, ty, and pytest best practices.",
+                author: "Trail of Bits",
+                github: "https://github.com/trailofbits/skills/tree/main/plugins/modern-python",
+                category: "coding",
+                tags: ["python", "tooling", "best-practices"]
+            },
+            {
+                name: "Makepad Skills",
+                description: "Makepad UI development skills for Rust apps: setup, patterns, shaders, packaging, and troubleshooting.",
+                author: "ZhangHanDong",
+                github: "https://github.com/ZhangHanDong/makepad-skills",
+                category: "coding",
+                tags: ["rust", "ui", "makepad"]
+            },
+            {
+                name: "Three.js Skills",
+                description: "Three.js skills for creating 3D elements and interactive experiences.",
+                author: "CloudAI-X",
+                github: "https://github.com/CloudAI-X/threejs-skills",
+                category: "coding",
+                tags: ["threejs", "3d", "webgl"]
+            },
+
+            // === RESEARCH SKILLS ===
+            {
+                name: "Claude Scientific Skills",
+                description: "Comprehensive collection of ready-to-use scientific skills, including working with specialized scientific libraries and databases.",
+                author: "K-Dense-AI",
+                github: "https://github.com/K-Dense-AI/claude-scientific-skills",
+                category: "research",
+                tags: ["science", "research", "data-analysis"]
+            },
+            {
+                name: "D3.js Visualizations",
+                description: "Create data visualizations in D3.js with Claude Code for interactive charts and graphics.",
+                author: "chrisvoncsefalvay",
+                github: "https://github.com/chrisvoncsefalvay/claude-d3js-skill",
+                category: "research",
+                tags: ["d3js", "visualization", "data"]
+            },
+            {
+                name: "Deep Research",
+                description: "Autonomous multi-step research using Gemini Deep Research Agent for comprehensive topic exploration.",
+                author: "sanjay3290",
+                github: "https://github.com/sanjay3290/ai-skills/tree/main/skills/deep-research",
+                category: "research",
+                tags: ["research", "gemini", "autonomous"]
+            },
+            {
+                name: "Content Research Writer",
+                description: "Enhance writing with integrated research capabilities for well-sourced content.",
+                author: "ComposioHQ",
+                github: "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/content-research-writer",
+                category: "research",
+                tags: ["writing", "research", "content"]
+            },
+            {
+                name: "Competitive Ads Extractor",
+                description: "Analyze competitor advertising strategies and extract insights for marketing research.",
+                author: "ComposioHQ",
+                github: "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/competitive-ads-extractor",
+                category: "research",
+                tags: ["marketing", "competitive-analysis", "ads"]
+            },
+            {
+                name: "Meeting Insights Analyzer",
+                description: "Analyze meeting communication patterns and extract actionable insights.",
+                author: "ComposioHQ",
+                github: "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/meeting-insights-analyzer",
+                category: "research",
+                tags: ["meetings", "analysis", "communication"]
+            },
+            {
+                name: "Hugging Face Evaluation",
+                description: "Model evaluation with vLLM/lighteval and evaluation tables for ML research.",
+                author: "Hugging Face",
+                github: "https://github.com/huggingface/skills/tree/main/skills/hugging-face-evaluation",
+                category: "research",
+                tags: ["ml", "evaluation", "huggingface"]
+            },
+
+            // === AUTOMATION SKILLS ===
+            {
+                name: "Playwright Skill",
+                description: "General-purpose browser automation using Playwright for testing, scraping, and UI verification.",
+                author: "lackeyjb",
+                github: "https://github.com/lackeyjb/playwright-skill",
+                category: "automation",
+                tags: ["playwright", "browser", "testing"]
+            },
+            {
+                name: "iOS Simulator Skill",
+                description: "iOS app building, navigation, and testing through Xcode simulator automation.",
+                author: "conorluddy",
+                github: "https://github.com/conorluddy/ios-simulator-skill",
+                category: "automation",
+                tags: ["ios", "simulator", "mobile"]
+            },
+            {
+                name: "Webapp Testing",
+                description: "Test local web applications using Playwright for UI verification and debugging. Official Anthropic skill.",
+                author: "Anthropic",
+                github: "https://github.com/anthropics/skills/tree/main/skills/webapp-testing",
+                category: "automation",
+                tags: ["official", "testing", "playwright"]
+            },
+            {
+                name: "Dispatching Parallel Agents",
+                description: "Coordinate multiple simultaneous agents for parallel task execution.",
+                author: "obra",
+                github: "https://github.com/obra/superpowers/blob/main/skills/dispatching-parallel-agents/SKILL.md",
+                category: "automation",
+                tags: ["multi-agent", "parallel", "orchestration"]
+            },
+            {
+                name: "Subagent-Driven Development",
+                description: "Development workflow using multiple sub-agents for complex tasks.",
+                author: "obra",
+                github: "https://github.com/obra/superpowers/blob/main/skills/subagent-driven-development/SKILL.md",
+                category: "automation",
+                tags: ["multi-agent", "development", "workflow"]
+            },
+            {
+                name: "FFUF Web Fuzzing",
+                description: "Expert guidance for ffuf web fuzzing during penetration testing, including authenticated fuzzing and result analysis.",
+                author: "jthack",
+                github: "https://github.com/jthack/ffuf_claude_skill",
+                category: "automation",
+                tags: ["security", "fuzzing", "pentesting"]
+            },
+            {
+                name: "Changelog Generator",
+                description: "Transform git commits into professional release notes automatically.",
+                author: "ComposioHQ",
+                github: "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/changelog-generator",
+                category: "automation",
+                tags: ["git", "changelog", "releases"]
+            },
+            {
+                name: "Web Asset Generator",
+                description: "Generate web assets like favicons, app icons, and social media images automatically.",
+                author: "alonw0",
+                github: "https://github.com/alonw0/web-asset-generator",
+                category: "automation",
+                tags: ["assets", "icons", "images"]
+            },
+            {
+                name: "Slack GIF Creator",
+                description: "Create animated GIFs optimized for Slack's size constraints.",
+                author: "Anthropic",
+                github: "https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator",
+                category: "automation",
+                tags: ["official", "slack", "gif"]
+            },
+            {
+                name: "Algorithmic Art",
+                description: "Create generative art using p5.js with seeded randomness, flow fields, and particle systems.",
+                author: "Anthropic",
+                github: "https://github.com/anthropics/skills/tree/main/skills/algorithmic-art",
+                category: "automation",
+                tags: ["official", "art", "generative"]
+            },
+
+            // === INTEGRATION SKILLS ===
+            {
+                name: "Cloudflare Skills",
+                description: "Deploy and manage Workers, KV, R2, D1, Vectorize, Queues, and Workflows on Cloudflare.",
+                author: "Cloudflare",
+                github: "https://github.com/cloudflare/skills",
+                category: "integration",
+                tags: ["cloudflare", "workers", "edge"]
+            },
+            {
+                name: "Stripe Best Practices",
+                description: "Best practices for building Stripe payment integrations.",
+                author: "Stripe",
+                github: "https://github.com/stripe/ai/tree/main/skills/stripe-best-practices",
+                category: "integration",
+                tags: ["stripe", "payments", "official"]
+            },
+            {
+                name: "Hugging Face CLI",
+                description: "HF Hub CLI for models, datasets, repos, and compute jobs on Hugging Face infrastructure.",
+                author: "Hugging Face",
+                github: "https://github.com/huggingface/skills/tree/main/skills/hugging-face-cli",
+                category: "integration",
+                tags: ["huggingface", "ml", "cli"]
+            },
+            {
+                name: "Vercel Deploy",
+                description: "Deploy projects to Vercel directly from Claude Code.",
+                author: "Vercel Labs",
+                github: "https://github.com/vercel-labs/agent-skills/tree/main/skills/claude.ai/vercel-deploy-claimable",
+                category: "integration",
+                tags: ["vercel", "deployment", "hosting"]
+            },
+            {
+                name: "Expo Skills",
+                description: "Build, deploy, and debug Expo apps with official skills from the Expo team.",
+                author: "Expo",
+                github: "https://github.com/expo/skills",
+                category: "integration",
+                tags: ["expo", "react-native", "mobile"]
+            },
+            {
+                name: "Sentry Skills",
+                description: "Code review, commits, PRs, and bug finding skills from Sentry's internal team.",
+                author: "Sentry",
+                github: "https://github.com/getsentry/skills",
+                category: "integration",
+                tags: ["sentry", "code-review", "devtools"]
+            },
+            {
+                name: "Better Auth Skills",
+                description: "Authentication setup with Better Auth including best practices and CLI commands.",
+                author: "Better Auth",
+                github: "https://github.com/better-auth/skills",
+                category: "integration",
+                tags: ["auth", "authentication", "security"]
+            },
+            {
+                name: "Tinybird Best Practices",
+                description: "Tinybird project guidelines for datasources, pipes, endpoints, and SQL.",
+                author: "Tinybird",
+                github: "https://github.com/tinybirdco/tinybird-agent-skills",
+                category: "integration",
+                tags: ["tinybird", "analytics", "sql"]
+            },
+            {
+                name: "Neon Postgres",
+                description: "Best practices for Neon Serverless Postgres including connections and optimization.",
+                author: "Neon",
+                github: "https://github.com/neondatabase/agent-skills",
+                category: "integration",
+                tags: ["neon", "postgres", "serverless"]
+            },
+            {
+                name: "fal.ai Skills",
+                description: "Generate images, videos, audio, and more using fal.ai's AI models.",
+                author: "fal.ai",
+                github: "https://github.com/fal-ai-community/skills",
+                category: "integration",
+                tags: ["fal", "ai-generation", "images"]
+            },
+            {
+                name: "Remotion Skills",
+                description: "Programmatic video creation with React using Remotion.",
+                author: "Remotion",
+                github: "https://github.com/remotion-dev/skills/tree/main/skills/remotion",
+                category: "integration",
+                tags: ["remotion", "video", "react"]
+            },
+            {
+                name: "WhatsApp Integration",
+                description: "Connect WhatsApp, set up webhooks, and send messages via Claude Code.",
+                author: "gokapso",
+                github: "https://github.com/gokapso/agent-skills/tree/master/skills/integrate-whatsapp",
+                category: "integration",
+                tags: ["whatsapp", "messaging", "webhooks"]
+            },
+            {
+                name: "X Article Publisher",
+                description: "Publish articles and content to X/Twitter programmatically.",
+                author: "wshuyi",
+                github: "https://github.com/wshuyi/x-article-publisher-skill",
+                category: "integration",
+                tags: ["twitter", "x", "publishing"]
+            },
+            {
+                name: "Rootly Incident Responder",
+                description: "AI-powered incident response with ML similarity matching, solution suggestions, and on-call coordination.",
+                author: "Rootly AI Labs",
+                github: "https://github.com/Rootly-AI-Labs/Rootly-MCP-server",
+                category: "integration",
+                tags: ["incident-response", "devops", "sre"]
+            }
+        ];
+
+        // Render skills
+        function renderSkills(filteredSkills) {
+            const grid = document.getElementById('skills-grid');
+            const count = document.getElementById('skills-count');
+            
+            grid.innerHTML = filteredSkills.map(skill => `
+                <article class="skill-card" data-category="${skill.category}">
+                    <div class="skill-header">
+                        <a href="${skill.github}" class="skill-name" target="_blank" rel="noopener">${skill.name}</a>
+                        <span class="skill-category ${skill.category}">${skill.category}</span>
+                    </div>
+                    <p class="skill-description">${skill.description}</p>
+                    <div class="skill-meta">
+                        <span class="skill-author">
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm4.879-2.773l4.264 2.559a.25.25 0 0 1 0 .428l-4.264 2.559A.25.25 0 0 1 6 10.559V5.442a.25.25 0 0 1 .379-.215Z"/>
+                            </svg>
+                            ${skill.author}
+                        </span>
+                        <a href="${skill.github}" target="_blank" rel="noopener" style="color: var(--link-color); text-decoration: none;">
+                            GitHub →
+                        </a>
+                    </div>
+                    <div class="skill-tags">
+                        ${skill.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                    </div>
+                </article>
+            `).join('');
+            
+            count.textContent = `Showing ${filteredSkills.length} skills`;
+        }
+
+        // Filter and search
+        let activeCategory = 'all';
+        let searchQuery = '';
+
+        function filterSkills() {
+            let filtered = skills;
+            
+            if (activeCategory !== 'all') {
+                filtered = filtered.filter(s => s.category === activeCategory);
+            }
+            
+            if (searchQuery) {
+                const query = searchQuery.toLowerCase();
+                filtered = filtered.filter(s => 
+                    s.name.toLowerCase().includes(query) ||
+                    s.description.toLowerCase().includes(query) ||
+                    s.tags.some(t => t.toLowerCase().includes(query)) ||
+                    s.author.toLowerCase().includes(query)
+                );
+            }
+            
+            renderSkills(filtered);
+        }
+
+        // Event listeners
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                activeCategory = btn.dataset.category;
+                filterSkills();
+            });
+        });
+
+        document.getElementById('search-input').addEventListener('input', (e) => {
+            searchQuery = e.target.value;
+            filterSkills();
+        });
+
+        // Theme toggle
+        function toggleTheme() {
+            const body = document.body;
+            const icon = document.getElementById('theme-icon');
+            const text = document.getElementById('theme-text');
+            
+            if (body.dataset.theme === 'dark') {
+                body.dataset.theme = 'light';
+                icon.textContent = '🌙';
+                text.textContent = 'Dark';
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.dataset.theme = 'dark';
+                icon.textContent = '☀️';
+                text.textContent = 'Light';
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check saved theme
+            const savedTheme = localStorage.getItem('theme') || 
+                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            
+            if (savedTheme === 'dark') {
+                document.body.dataset.theme = 'dark';
+                document.getElementById('theme-icon').textContent = '☀️';
+                document.getElementById('theme-text').textContent = 'Light';
+            }
+            
+            // Update total count
+            document.getElementById('total-skills').textContent = skills.length + '+';
+            
+            // Initial render
+            renderSkills(skills);
+        });
+    </script>
+</body>
+</html>
